@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "transidate"
+version = "0.1.0"
+description = "Commandline tool for XML transit data validation."
+authors = ["Ciaran McCormick <ciaran@ciaranmccormick.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.1.2"
+lxml = "^4.6.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ipython = "^7.18.1"
+coverage = "^5.3"
+pytest-cov = "^2.10.1"
+pre-commit = "^2.7.1"
+tox = "^3.20.1"
+tox-pyenv = "^1.1.0"
+mypy = "^0.790"
+lxml-stubs = "^0.1.1"
+isort = "^5.6.4"
+
+[tool.coverage.run]
+source = [".",]
+
+[tool.coverage.report]
+omit = ["*/.pyenv/*", "transidate/cli.py"]
+
+[tool.coverage.html]
+directory = "htmlcov"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+envlist =  py37, py38
+
+[testenv]
+whitelist_externals = poetry
+commands =
+    poetry install -v
+    poetry run pytest --cov=transidate --cov-branch --cov-fail-under=80 tests/
+"""
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+transidate = "transidate.cli:validate"
