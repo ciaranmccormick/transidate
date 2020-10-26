@@ -1,0 +1,2274 @@
+<?xml version="1.0"?>
+<TransXChange xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_registration.xsd" CreationDateTime="2020-08-25T11:22:46" ModificationDateTime="2020-08-25T11:22:46" RegistrationDocument="true" Modification="new" RevisionNumber="0" FileName="68_SIN_PB_68_20200906.xml" SchemaVersion="2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.transxchange.org.uk/">
+<ServicedOrganisations>
+<ServicedOrganisation>
+<OrganisationCode>SCH</OrganisationCode>
+<Name>Schooldays Only</Name>
+<WorkingDays>
+<DateRange>
+<StartDate>2020-09-07</StartDate>
+<EndDate>2020-09-11</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-09-14</StartDate>
+<EndDate>2020-09-18</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-09-21</StartDate>
+<EndDate>2020-09-25</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-09-28</StartDate>
+<EndDate>2020-10-02</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-10-05</StartDate>
+<EndDate>2020-10-09</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-10-12</StartDate>
+<EndDate>2020-10-16</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-10-19</StartDate>
+<EndDate>2020-10-23</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-11-02</StartDate>
+<EndDate>2020-11-06</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-11-09</StartDate>
+<EndDate>2020-11-13</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-11-16</StartDate>
+<EndDate>2020-11-20</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-11-23</StartDate>
+<EndDate>2020-11-27</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-11-30</StartDate>
+<EndDate>2020-12-04</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-12-07</StartDate>
+<EndDate>2020-12-11</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-12-14</StartDate>
+<EndDate>2020-12-18</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-01-04</StartDate>
+<EndDate>2021-01-08</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-01-11</StartDate>
+<EndDate>2021-01-15</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-01-18</StartDate>
+<EndDate>2021-01-22</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-01-25</StartDate>
+<EndDate>2021-01-29</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-02-01</StartDate>
+<EndDate>2021-02-05</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-02-08</StartDate>
+<EndDate>2021-02-12</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-02-22</StartDate>
+<EndDate>2021-02-26</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-03-01</StartDate>
+<EndDate>2021-03-05</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-03-08</StartDate>
+<EndDate>2021-03-12</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-03-15</StartDate>
+<EndDate>2021-03-19</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-03-22</StartDate>
+<EndDate>2021-03-26</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-04-12</StartDate>
+<EndDate>2021-04-16</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-04-19</StartDate>
+<EndDate>2021-04-23</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-04-26</StartDate>
+<EndDate>2021-04-30</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-05-03</StartDate>
+<EndDate>2021-05-07</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-05-10</StartDate>
+<EndDate>2021-05-14</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-05-17</StartDate>
+<EndDate>2021-05-21</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-05-24</StartDate>
+<EndDate>2021-05-28</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-06-07</StartDate>
+<EndDate>2021-06-11</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-06-14</StartDate>
+<EndDate>2021-06-18</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-06-21</StartDate>
+<EndDate>2021-06-25</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-06-28</StartDate>
+<EndDate>2021-07-02</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-07-05</StartDate>
+<EndDate>2021-07-09</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-07-12</StartDate>
+<EndDate>2021-07-16</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-03</StartDate>
+<EndDate>2021-08-03</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-10</StartDate>
+<EndDate>2021-08-10</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-17</StartDate>
+<EndDate>2021-08-17</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-24</StartDate>
+<EndDate>2021-08-24</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-31</StartDate>
+<EndDate>2021-08-31</EndDate>
+</DateRange>
+</WorkingDays>
+<Holidays>
+<DateRange>
+<StartDate>2020-10-26</StartDate>
+<EndDate>2020-10-30</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-12-21</StartDate>
+<EndDate>2020-12-25</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2020-12-28</StartDate>
+<EndDate>2021-01-01</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-02-15</StartDate>
+<EndDate>2021-02-19</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-03-29</StartDate>
+<EndDate>2021-04-02</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-04-05</StartDate>
+<EndDate>2021-04-09</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-05-31</StartDate>
+<EndDate>2021-06-04</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-07-19</StartDate>
+<EndDate>2021-07-23</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-07-26</StartDate>
+<EndDate>2021-07-30</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-02</StartDate>
+<EndDate>2021-08-02</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-04</StartDate>
+<EndDate>2021-08-06</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-09</StartDate>
+<EndDate>2021-08-09</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-11</StartDate>
+<EndDate>2021-08-13</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-16</StartDate>
+<EndDate>2021-08-16</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-18</StartDate>
+<EndDate>2021-08-20</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-23</StartDate>
+<EndDate>2021-08-23</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-25</StartDate>
+<EndDate>2021-08-27</EndDate>
+</DateRange>
+<DateRange>
+<StartDate>2021-08-30</StartDate>
+<EndDate>2021-08-30</EndDate>
+</DateRange>
+</Holidays>
+</ServicedOrganisation>
+</ServicedOrganisations>
+<NptgLocalities></NptgLocalities>
+<StopPoints>
+<AnnotatedStopPointRef>
+<StopPointRef>4100009FLEGS</StopPointRef>
+<CommonName>Four Lane Ends Interchange</CommonName>
+<Indicator>G</Indicator>
+<LocalityName>Four Lane Ends</LocalityName>
+</AnnotatedStopPointRef>
+<AnnotatedStopPointRef>
+<StopPointRef>4100009DSSWB</StopPointRef>
+<CommonName>DWP Tyneview Park</CommonName>
+<Indicator>B</Indicator>
+<LocalityName>Benton</LocalityName>
+</AnnotatedStopPointRef>
+</StopPoints>
+<RouteSections>
+<RouteSection id="73">
+<RouteLink id="73_1">
+<From>
+<StopPointRef>4100009FLEGS</StopPointRef>
+</From>
+<To>
+<StopPointRef>4100009DSSWB</StopPointRef>
+</To>
+<Distance>1346</Distance>
+<Direction>outbound</Direction>
+<Track>
+<Mapping>
+<Location>
+<Longitude>-1.578965</Longitude>
+<Latitude>55.010094</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578798</Longitude>
+<Latitude>55.00994</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578756</Longitude>
+<Latitude>55.009778</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578731</Longitude>
+<Latitude>55.009607</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578687</Longitude>
+<Latitude>55.009517</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578523</Longitude>
+<Latitude>55.009282</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578399</Longitude>
+<Latitude>55.009227</Latitude>
+</Location>
+<Location>
+<Longitude>-1.577955</Longitude>
+<Latitude>55.009383</Latitude>
+</Location>
+<Location>
+<Longitude>-1.57603</Longitude>
+<Latitude>55.009783</Latitude>
+</Location>
+<Location>
+<Longitude>-1.57453</Longitude>
+<Latitude>55.010107</Latitude>
+</Location>
+<Location>
+<Longitude>-1.573726</Longitude>
+<Latitude>55.010251</Latitude>
+</Location>
+<Location>
+<Longitude>-1.57259</Longitude>
+<Latitude>55.010489</Latitude>
+</Location>
+<Location>
+<Longitude>-1.571215</Longitude>
+<Latitude>55.010832</Latitude>
+</Location>
+<Location>
+<Longitude>-1.570223</Longitude>
+<Latitude>55.010964</Latitude>
+</Location>
+<Location>
+<Longitude>-1.569626</Longitude>
+<Latitude>55.011038</Latitude>
+</Location>
+<Location>
+<Longitude>-1.568712</Longitude>
+<Latitude>55.011163</Latitude>
+</Location>
+<Location>
+<Longitude>-1.567567</Longitude>
+<Latitude>55.011213</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566987</Longitude>
+<Latitude>55.011224</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566966</Longitude>
+<Latitude>55.010919</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566939</Longitude>
+<Latitude>55.010793</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566848</Longitude>
+<Latitude>55.010702</Latitude>
+</Location>
+<Location>
+<Longitude>-1.56674</Longitude>
+<Latitude>55.010639</Latitude>
+</Location>
+<Location>
+<Longitude>-1.56657</Longitude>
+<Latitude>55.010592</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566321</Longitude>
+<Latitude>55.010544</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566135</Longitude>
+<Latitude>55.010479</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566059</Longitude>
+<Latitude>55.010407</Latitude>
+</Location>
+<Location>
+<Longitude>-1.56594</Longitude>
+<Latitude>55.010226</Latitude>
+</Location>
+<Location>
+<Longitude>-1.565719</Longitude>
+<Latitude>55.009811</Latitude>
+</Location>
+<Location>
+<Longitude>-1.565293</Longitude>
+<Latitude>55.008982</Latitude>
+</Location>
+<Location>
+<Longitude>-1.564868</Longitude>
+<Latitude>55.008143</Latitude>
+</Location>
+<Location>
+<Longitude>-1.565389</Longitude>
+<Latitude>55.008015</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566943</Longitude>
+<Latitude>55.007925</Latitude>
+</Location>
+<Location>
+<Longitude>-1.567086</Longitude>
+<Latitude>55.007873</Latitude>
+</Location>
+</Mapping>
+</Track>
+</RouteLink>
+</RouteSection>
+<RouteSection id="76">
+<RouteLink id="76_1">
+<From>
+<StopPointRef>4100009DSSWB</StopPointRef>
+</From>
+<To>
+<StopPointRef>4100009FLEGS</StopPointRef>
+</To>
+<Distance>1345</Distance>
+<Direction>inbound</Direction>
+<Track>
+<Mapping>
+<Location>
+<Longitude>-1.566174</Longitude>
+<Latitude>55.007961</Latitude>
+</Location>
+<Location>
+<Longitude>-1.565389</Longitude>
+<Latitude>55.008015</Latitude>
+</Location>
+<Location>
+<Longitude>-1.564868</Longitude>
+<Latitude>55.008143</Latitude>
+</Location>
+<Location>
+<Longitude>-1.565293</Longitude>
+<Latitude>55.008982</Latitude>
+</Location>
+<Location>
+<Longitude>-1.565719</Longitude>
+<Latitude>55.009811</Latitude>
+</Location>
+<Location>
+<Longitude>-1.56594</Longitude>
+<Latitude>55.010226</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566059</Longitude>
+<Latitude>55.010407</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566135</Longitude>
+<Latitude>55.010479</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566321</Longitude>
+<Latitude>55.010544</Latitude>
+</Location>
+<Location>
+<Longitude>-1.56657</Longitude>
+<Latitude>55.010592</Latitude>
+</Location>
+<Location>
+<Longitude>-1.56674</Longitude>
+<Latitude>55.010639</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566848</Longitude>
+<Latitude>55.010702</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566939</Longitude>
+<Latitude>55.010793</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566966</Longitude>
+<Latitude>55.010919</Latitude>
+</Location>
+<Location>
+<Longitude>-1.566987</Longitude>
+<Latitude>55.011224</Latitude>
+</Location>
+<Location>
+<Longitude>-1.567567</Longitude>
+<Latitude>55.011213</Latitude>
+</Location>
+<Location>
+<Longitude>-1.568712</Longitude>
+<Latitude>55.011163</Latitude>
+</Location>
+<Location>
+<Longitude>-1.569626</Longitude>
+<Latitude>55.011038</Latitude>
+</Location>
+<Location>
+<Longitude>-1.570223</Longitude>
+<Latitude>55.010964</Latitude>
+</Location>
+<Location>
+<Longitude>-1.571215</Longitude>
+<Latitude>55.010832</Latitude>
+</Location>
+<Location>
+<Longitude>-1.57259</Longitude>
+<Latitude>55.010489</Latitude>
+</Location>
+<Location>
+<Longitude>-1.573726</Longitude>
+<Latitude>55.010251</Latitude>
+</Location>
+<Location>
+<Longitude>-1.57453</Longitude>
+<Latitude>55.010107</Latitude>
+</Location>
+<Location>
+<Longitude>-1.57603</Longitude>
+<Latitude>55.009783</Latitude>
+</Location>
+<Location>
+<Longitude>-1.577955</Longitude>
+<Latitude>55.009383</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578399</Longitude>
+<Latitude>55.009227</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578418</Longitude>
+<Latitude>55.009138</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578576</Longitude>
+<Latitude>55.009104</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578669</Longitude>
+<Latitude>55.009131</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578697</Longitude>
+<Latitude>55.009212</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578889</Longitude>
+<Latitude>55.009564</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578779</Longitude>
+<Latitude>55.00959</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578731</Longitude>
+<Latitude>55.009607</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578255</Longitude>
+<Latitude>55.009781</Latitude>
+</Location>
+<Location>
+<Longitude>-1.577985</Longitude>
+<Latitude>55.009877</Latitude>
+</Location>
+<Location>
+<Longitude>-1.577872</Longitude>
+<Latitude>55.009983</Latitude>
+</Location>
+<Location>
+<Longitude>-1.577807</Longitude>
+<Latitude>55.010054</Latitude>
+</Location>
+<Location>
+<Longitude>-1.577896</Longitude>
+<Latitude>55.01019</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578549</Longitude>
+<Latitude>55.010806</Latitude>
+</Location>
+<Location>
+<Longitude>-1.578639</Longitude>
+<Latitude>55.010915</Latitude>
+</Location>
+<Location>
+<Longitude>-1.579027</Longitude>
+<Latitude>55.011036</Latitude>
+</Location>
+<Location>
+<Longitude>-1.579338</Longitude>
+<Latitude>55.01112</Latitude>
+</Location>
+<Location>
+<Longitude>-1.579479</Longitude>
+<Latitude>55.011095</Latitude>
+</Location>
+<Location>
+<Longitude>-1.579702</Longitude>
+<Latitude>55.01099</Latitude>
+</Location>
+<Location>
+<Longitude>-1.579752</Longitude>
+<Latitude>55.010927</Latitude>
+</Location>
+</Mapping>
+</Track>
+</RouteLink>
+</RouteSection>
+</RouteSections>
+<Routes>
+<Route id="74">
+<PrivateCode>1</PrivateCode>
+<Description>Four Lane Ends - Tyneview Pk DSS</Description>
+<RouteSectionRef>73</RouteSectionRef>
+</Route>
+<Route id="77">
+<PrivateCode>2</PrivateCode>
+<Description>Four Lane Ends - Tyneview Pk DSS</Description>
+<RouteSectionRef>76</RouteSectionRef>
+</Route>
+</Routes>
+<JourneyPatternSections>
+<JourneyPatternSection id="3">
+<JourneyPatternTimingLink id="4">
+<From id="8" SequenceNumber="1">
+<DynamicDestinationDisplay>Tyneview Park</DynamicDestinationDisplay>
+<StopPointRef>4100009FLEGS</StopPointRef>
+<TimingStatus>PTP</TimingStatus>
+<FareStageNumber>201</FareStageNumber>
+</From>
+<To id="9" SequenceNumber="2">
+<DynamicDestinationDisplay>Tyneview Park</DynamicDestinationDisplay>
+<StopPointRef>4100009DSSWB</StopPointRef>
+<TimingStatus>PTP</TimingStatus>
+<FareStageNumber>202</FareStageNumber>
+</To>
+<RouteLinkRef>73_1</RouteLinkRef>
+<Direction>outbound</Direction>
+<RunTime>PT4M40S</RunTime>
+</JourneyPatternTimingLink>
+</JourneyPatternSection>
+<JourneyPatternSection id="36">
+<JourneyPatternTimingLink id="37">
+<From id="74" SequenceNumber="1">
+<DynamicDestinationDisplay>Four Lane Ends</DynamicDestinationDisplay>
+<StopPointRef>4100009DSSWB</StopPointRef>
+<TimingStatus>PTP</TimingStatus>
+<FareStageNumber>202</FareStageNumber>
+</From>
+<To id="75" SequenceNumber="2">
+<DynamicDestinationDisplay>Four Lane Ends</DynamicDestinationDisplay>
+<StopPointRef>4100009FLEGS</StopPointRef>
+<TimingStatus>PTP</TimingStatus>
+<FareStageNumber>201</FareStageNumber>
+</To>
+<RouteLinkRef>76_1</RouteLinkRef>
+<Direction>inbound</Direction>
+<RunTime>PT4M0S</RunTime>
+</JourneyPatternTimingLink>
+</JourneyPatternSection>
+</JourneyPatternSections>
+<Operators>
+<LicensedOperator id="4">
+<NationalOperatorCode>SCNE</NationalOperatorCode>
+<OperatorCode>SIN</OperatorCode>
+<OperatorShortName>Stagecoach</OperatorShortName>
+<OperatorNameOnLicence>Busways Travel Services Ltd</OperatorNameOnLicence>
+<TradingName>Stagecoach in Newcastle</TradingName>
+<LicenceNumber>PB0002404</LicenceNumber>
+<LicenceClassification>standardInternational</LicenceClassification>
+<EnquiryTelephoneNumber>
+<TelNationalNumber>0871 200 22 33</TelNationalNumber>
+</EnquiryTelephoneNumber>
+<ContactTelephoneNumber>
+<TelNationalNumber>0191 566 0243</TelNationalNumber>
+</ContactTelephoneNumber>
+<OperatorAddresses>
+<CorrespondenceAddress>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Wheatsheaf</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Sunderland</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Tyne &amp; Wear</apd:Line>
+<apd:PostCode xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">SR5 1AQ</apd:PostCode>
+</CorrespondenceAddress>
+</OperatorAddresses>
+<EmailAddress>schedules.northeast@stagecoachbus.com</EmailAddress>
+<Garages>
+<Garage>
+<GarageCode>NEBY</GarageCode>
+<GarageName>Byker Depot</GarageName>
+<ContactNumber>
+<TelNationalNumber>0191 276 1411</TelNationalNumber>
+</ContactNumber>
+<Address>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Walkergate</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Newcastle on Tyne, Tyne &amp; Wear</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">NE6 2BZ</apd:Line>
+</Address>
+</Garage>
+<Garage>
+<GarageCode>NEHA</GarageCode>
+<GarageName>Hartlepool Depot</GarageName>
+<ContactNumber>
+<TelNationalNumber>01429 866737</TelNationalNumber>
+</ContactNumber>
+<Address>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Brenda Road</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Hartlepool, Co Durham</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">TS25 1NP</apd:Line>
+</Address>
+</Garage>
+<Garage>
+<GarageCode>NESL</GarageCode>
+<GarageName>Slatyford Depot</GarageName>
+<ContactNumber>
+<TelNationalNumber>0191 228 8900</TelNationalNumber>
+</ContactNumber>
+<Address>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Slatyford Lane</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Newcastle on Tyne, Tyne &amp; Wear</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">NE5 2SE</apd:Line>
+</Address>
+</Garage>
+<Garage>
+<GarageCode>NESO</GarageCode>
+<GarageName>South Shields Depot</GarageName>
+<ContactNumber>
+<TelNationalNumber>0191 456 6521</TelNationalNumber>
+</ContactNumber>
+<Address>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Dean Road</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">South Shields, Tyne &amp; Wear</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">NE33 4HZ</apd:Line>
+</Address>
+</Garage>
+<Garage>
+<GarageCode>NEST</GarageCode>
+<GarageName>Stockton Depot</GarageName>
+<ContactNumber>
+<TelNationalNumber>01642 602112</TelNationalNumber>
+</ContactNumber>
+<Address>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Church Road</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Stockton-on-Tees, Co Durham</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">TS18 2HW</apd:Line>
+</Address>
+</Garage>
+<Garage>
+<GarageCode>NESU</GarageCode>
+<GarageName>Sunderland Depot</GarageName>
+<ContactNumber>
+<TelNationalNumber>0191 567 5251</TelNationalNumber>
+</ContactNumber>
+<Address>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Wheatsheaf</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">Sunderland, Tyne &amp; Wear</apd:Line>
+<apd:Line xmlns:apd="http://www.govtalk.gov.uk/people/AddressAndPersonalDetails">SR5 1AQ</apd:Line>
+</Address>
+</Garage>
+</Garages>
+</LicensedOperator>
+</Operators>
+<Services>
+<Service>
+<ServiceCode>68</ServiceCode>
+<Lines>
+<Line id="2">
+<LineName>68</LineName>
+</Line>
+</Lines>
+<OperatingPeriod>
+<StartDate>2020-09-06</StartDate>
+<EndDate>2020-12-31</EndDate>
+</OperatingPeriod>
+<ServiceClassification>
+<NormalStopping />
+</ServiceClassification>
+<RegisteredOperatorRef>4</RegisteredOperatorRef>
+<StopRequirements>
+<NoNewStopsRequired />
+</StopRequirements>
+<Description>Corona file</Description>
+<StandardService>
+<Origin>Four Lane Ends Metro</Origin>
+<Destination>D.S.S Tyneview Park</Destination>
+<UseAllStopPoints>true</UseAllStopPoints>
+<JourneyPattern id="1">
+<PrivateCode>250377</PrivateCode>
+<DestinationDisplay>Tyneview Park DSS</DestinationDisplay>
+<Direction>outbound</Direction>
+<RouteRef>74</RouteRef>
+<JourneyPatternSectionRefs>3</JourneyPatternSectionRefs>
+</JourneyPattern>
+<JourneyPattern id="35">
+<PrivateCode>250378</PrivateCode>
+<DestinationDisplay>Four Lane Ends</DestinationDisplay>
+<Direction>inbound</Direction>
+<RouteRef>77</RouteRef>
+<JourneyPatternSectionRefs>36</JourneyPatternSectionRefs>
+</JourneyPattern>
+</StandardService>
+<Direction>inboundAndOutbound</Direction>
+</Service>
+</Services><VehicleJourneys>
+<VehicleJourney>
+<PrivateCode>5105301</PrivateCode>
+<Operational>
+<Block>
+<Description>11</Description>
+<BlockNumber>11</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>1</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105301</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>06:54:00</DepartureTime>
+<VehicleJourneyTimingLink id="6">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT4M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105302</PrivateCode>
+<Operational>
+<Block>
+<Description>11</Description>
+<BlockNumber>11</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>3</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105302</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>07:06:00</DepartureTime>
+<VehicleJourneyTimingLink id="8">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT4M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105300</PrivateCode>
+<Operational>
+<Block>
+<Description>11</Description>
+<BlockNumber>11</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>5</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105300</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>07:20:00</DepartureTime>
+<VehicleJourneyTimingLink id="10">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT4M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105306</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>7</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105306</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>07:34:00</DepartureTime>
+<VehicleJourneyTimingLink id="12">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT4M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105307</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>9</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105307</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>07:46:00</DepartureTime>
+<VehicleJourneyTimingLink id="14">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT6M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105308</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>11</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105308</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>08:06:00</DepartureTime>
+<VehicleJourneyTimingLink id="16">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT6M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105305</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>13</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105305</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>08:26:00</DepartureTime>
+<VehicleJourneyTimingLink id="18">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT6M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105298</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>15</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105298</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>08:46:00</DepartureTime>
+<VehicleJourneyTimingLink id="20">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT6M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105297</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>17</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT12M0S</Duration>
+<Name>Chapel House West Layby</Name>
+<Location>
+<Longitude>-1.719977</Longitude>
+<Latitude>54.995981</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105297</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>09:06:00</DepartureTime>
+<VehicleJourneyTimingLink id="22">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT6M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105309</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>25</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT4M0S</Duration>
+<Name>DSS Tyneview Park</Name>
+<Location>
+<Longitude>-1.566106</Longitude>
+<Latitude>55.007688</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105309</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>16:47:00</DepartureTime>
+<VehicleJourneyTimingLink id="24">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT4M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105299</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>27</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT4M0S</Duration>
+<Name>DSS Tyneview Park</Name>
+<Location>
+<Longitude>-1.566106</Longitude>
+<Latitude>55.007688</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105299</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>17:07:00</DepartureTime>
+<VehicleJourneyTimingLink id="26">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT4M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105310</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>29</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT4M0S</Duration>
+<Name>DSS Tyneview Park</Name>
+<Location>
+<Longitude>-1.566106</Longitude>
+<Latitude>55.007688</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105310</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>17:27:00</DepartureTime>
+<VehicleJourneyTimingLink id="28">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT4M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105303</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>31</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT4M0S</Duration>
+<Name>DSS Tyneview Park</Name>
+<Location>
+<Longitude>-1.566106</Longitude>
+<Latitude>55.007688</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105303</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>17:47:00</DepartureTime>
+<VehicleJourneyTimingLink id="30">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT4M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105311</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>33</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT4M0S</Duration>
+<Name>DSS Tyneview Park</Name>
+<Location>
+<Longitude>-1.566106</Longitude>
+<Latitude>55.007688</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105311</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>18:07:00</DepartureTime>
+<VehicleJourneyTimingLink id="32">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT4M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105304</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>35</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT4M0S</Duration>
+<Name>DSS Tyneview Park</Name>
+<Location>
+<Longitude>-1.566106</Longitude>
+<Latitude>55.007688</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105304</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>1</JourneyPatternRef>
+<DepartureTime>18:27:00</DepartureTime>
+<VehicleJourneyTimingLink id="34">
+<JourneyPatternTimingLinkRef>4</JourneyPatternTimingLinkRef>
+<RunTime>PT4M0S</RunTime>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105322</PrivateCode>
+<Operational>
+<Block>
+<Description>11</Description>
+<BlockNumber>11</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>2</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT4M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105322</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>06:58:00</DepartureTime>
+<VehicleJourneyTimingLink id="39">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney>
+<VehicleJourney>
+<PrivateCode>5105323</PrivateCode>
+<Operational>
+<Block>
+<Description>11</Description>
+<BlockNumber>11</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>4</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT6M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105323</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>07:10:00</DepartureTime>
+<VehicleJourneyTimingLink id="41">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105320</PrivateCode>
+<Operational>
+<Block>
+<Description>11</Description>
+<BlockNumber>11</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>6</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT20M0S</Duration>
+<Name>Coach Lane Campus</Name>
+<Location>
+<Longitude>-1.572395</Longitude>
+<Latitude>55.005904</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105320</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>07:24:00</DepartureTime>
+<VehicleJourneyTimingLink id="43">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105314</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>8</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT4M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105314</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>07:38:00</DepartureTime>
+<VehicleJourneyTimingLink id="45">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105319</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>10</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT10M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105319</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>07:52:00</DepartureTime>
+<VehicleJourneyTimingLink id="47">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105315</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>12</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT10M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105315</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>08:12:00</DepartureTime>
+<VehicleJourneyTimingLink id="49">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105312</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>14</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT10M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105312</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>08:32:00</DepartureTime>
+<VehicleJourneyTimingLink id="51">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105313</PrivateCode>
+<Operational>
+<Block>
+<Description>418</Description>
+<BlockNumber>418</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LHDD</VehicleTypeCode>
+<Description>Low Floor Hybrid DD</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>16</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT10M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105313</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>08:52:00</DepartureTime>
+<VehicleJourneyTimingLink id="53">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105328</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>24</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<ServicedOrganisationDayType>
+<DaysOfOperation>
+<Holidays>
+<ServicedOrganisationRef>SCH</ServicedOrganisationRef>
+</Holidays>
+</DaysOfOperation>
+</ServicedOrganisationDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105328</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>16:35:00</DepartureTime>
+<VehicleJourneyTimingLink id="55">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105321</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>24</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<ServicedOrganisationDayType>
+<DaysOfOperation>
+<WorkingDays>
+<ServicedOrganisationRef>SCH</ServicedOrganisationRef>
+</WorkingDays>
+</DaysOfOperation>
+</ServicedOrganisationDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT8M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105321</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>16:35:00</DepartureTime>
+<VehicleJourneyTimingLink id="57">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105325</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>26</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT8M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105325</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>16:55:00</DepartureTime>
+<VehicleJourneyTimingLink id="59">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105318</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>28</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT8M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105318</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>17:15:00</DepartureTime>
+<VehicleJourneyTimingLink id="61">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105326</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>30</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT8M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105326</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>17:35:00</DepartureTime>
+<VehicleJourneyTimingLink id="63">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105317</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>32</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT8M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105317</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>17:55:00</DepartureTime>
+<VehicleJourneyTimingLink id="65">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105327</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>34</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<LayoverPoint>
+<Duration>PT8M0S</Duration>
+<Name>Four Lane Ends Metro</Name>
+<Location>
+<Longitude>-1.578763</Longitude>
+<Latitude>55.009925</Latitude>
+</Location>
+</LayoverPoint>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105327</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>18:15:00</DepartureTime>
+<VehicleJourneyTimingLink id="67">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105316</PrivateCode>
+<Operational>
+<Block>
+<Description>997</Description>
+<BlockNumber>997</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>36</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105316</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>18:35:00</DepartureTime>
+<VehicleJourneyTimingLink id="69">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney><VehicleJourney>
+<PrivateCode>5105324</PrivateCode>
+<Operational>
+<Block>
+<Description>13</Description>
+<BlockNumber>13</BlockNumber>
+</Block>
+<VehicleType>
+<VehicleTypeCode>LFDD</VehicleTypeCode>
+<Description>Low Floor Double Deck</Description>
+</VehicleType>
+<TicketMachine>
+<TicketMachineServiceCode>68</TicketMachineServiceCode>
+<JourneyCode>38</JourneyCode>
+</TicketMachine>
+</Operational>
+<OperatingProfile>
+<RegularDayType>
+<DaysOfWeek>
+<MondayToFriday />
+</DaysOfWeek>
+</RegularDayType>
+<SpecialDaysOperation />
+<BankHolidayOperation>
+<DaysOfNonOperation>
+<AllBankHolidays />
+</DaysOfNonOperation>
+</BankHolidayOperation>
+</OperatingProfile>
+<GarageRef>NEBY</GarageRef>
+<VehicleJourneyCode>5105324</VehicleJourneyCode>
+<ServiceRef>68</ServiceRef>
+<LineRef>2</LineRef>
+<JourneyPatternRef>35</JourneyPatternRef>
+<DepartureTime>20:10:00</DepartureTime>
+<VehicleJourneyTimingLink id="71">
+<JourneyPatternTimingLinkRef>37</JourneyPatternTimingLinkRef>
+</VehicleJourneyTimingLink>
+</VehicleJourney></VehicleJourneys>
+<Registrations>
+<Registration>
+<ServiceRef>68</ServiceRef>
+<SubmissionDate>2020-08-25</SubmissionDate>
+<VosaRegistrationNumber>
+<TanCode>PB</TanCode>
+<LicenceNumber>0002404</LicenceNumber>
+<RegistrationNumber>75</RegistrationNumber>
+</VosaRegistrationNumber>
+<ApplicationClassification>chargeableChange</ApplicationClassification>
+<VariationNumber>0</VariationNumber>
+<SubmissionAuthor>
+<Position>Head of Commercial</Position>
+<Title>Mr</Title>
+<Forename>David</Forename>
+<Surname>Parker</Surname>
+</SubmissionAuthor>
+<TrafficAreas>
+<TrafficArea>
+<TrafficAreaName>NorthEastern</TrafficAreaName>
+</TrafficArea>
+</TrafficAreas>
+<CirculatedAuthorities>
+<CirculatedAuthority>
+<AuthorityName>NexusTynesde</AuthorityName>
+</CirculatedAuthority>
+</CirculatedAuthorities>
+<SubsidyDetails>
+<NoSubsidy />
+</SubsidyDetails>
+</Registration>
+</Registrations>
+</TransXChange>
