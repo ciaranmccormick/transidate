@@ -6,4 +6,6 @@
 
 ```sh
 pip install transidate
+
+transidate /path/to/xml/or/zip/file
 ```
