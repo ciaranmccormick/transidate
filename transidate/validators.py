@@ -33,6 +33,8 @@ class XMLValidator:
     name: Optional[str] = None
 
     def __init__(self, source):
+        if hasattr(source, "seek"):
+            source.seek(0)
         self._source = source
         self._tree = etree.parse(source)
 
@@ -111,3 +113,20 @@ class SiriValidator(XMLValidator):
         root = Path("xsd").joinpath("siri.xsd")
         url = SIRI_XSD_URLS.get(self.version)
         return XSDConfig(url, root)
+
+
+class ValidatorFactory:
+    def __init__(self, source):
+        self._source = source
+        self._tree = etree.parse(source)
+
+    def get_validator(self):
+        root = self._tree.getroot()
+        nsmap = root.nsmap.get(None)
+
+        if "transxchange" in nsmap.lower():
+            return TransXChangeValidator(self._source)
+        elif "netex" in nsmap.lower():
+            return NeTExValidator(self._source)
+        elif "siri" in nsmap.lower():
+            return SiriValidator(self._source)

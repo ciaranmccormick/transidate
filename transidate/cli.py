@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import click
-from transidate.xml import ValidationResult, XMLDocument
+from transidate.validators import ValidationResult, ValidatorFactory
 from transidate.zip import ZipValidator
 
 
@@ -24,9 +24,10 @@ def print_results(result: ValidationResult):
 
 
 def validate_xml_file(fullpath: str):
-    doc = XMLDocument(fullpath)
+    factory = ValidatorFactory(fullpath)
+    validator = factory.get_validator()
     click.echo(f"Validating {fullpath}.")
-    result = doc.validate()
+    result = validator.validate()
     print_results(result)
 
 

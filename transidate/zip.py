@@ -1,6 +1,6 @@
 import zipfile
 
-from transidate.validators import TransXChangeValidator
+from transidate.validators import ValidatorFactory
 from transidate.xsd import XSDConfig, XSDDownloader
 
 
@@ -24,7 +24,8 @@ class ZipValidator:
 
     def get_validator_by_name(self, name):
         with self._zip.open(name) as f_:
-            return TransXChangeValidator(f_)
+            factory = ValidatorFactory(f_)
+            return factory.get_validator()
 
     def validate_files(self):
         names = self.get_filenames()
