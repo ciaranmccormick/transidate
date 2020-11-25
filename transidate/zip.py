@@ -1,7 +1,7 @@
 import zipfile
 
 from transidate.validators import ValidatorFactory
-from transidate.xsd import XSDConfig, XSDDownloader
+from transidate.xsd import Config, DownloaderFactory
 
 
 class ZipValidator:
@@ -10,12 +10,13 @@ class ZipValidator:
         self._schemas = {}
         self._zip = zipfile.ZipFile(self._file)
 
-    def get_schema(self, conf: XSDConfig):
+    def get_schema(self, conf: Config):
         schema = self._schemas.get(conf.url, None)
 
         if schema is None:
-            downloader = XSDDownloader.from_xsd_config(conf)
-            schema = downloader.download_xsd()
+            factory = DownloaderFactory(conf)
+            downloader = factory.get_downloader()
+            schema = downloader.download()
             self._schemas[conf.url] = schema
         return schema
 

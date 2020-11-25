@@ -1,3 +1,4 @@
+from pathlib import Path
 from unittest.mock import Mock, patch
 
 from transidate import ValidationResult
@@ -5,8 +6,10 @@ from transidate.validators import (
     NeTExValidator,
     SiriValidator,
     TransXChangeValidator,
+    ValidationError,
     XMLValidator,
 )
+from transidate.violations import Violation
 
 
 class TestXMLValidator:
@@ -40,7 +43,7 @@ class TestTransXChange21Document:
         validator = TransXChangeValidator(txc21)
         expected = ValidationResult(
             status=ValidationResult.OK,
-            error=None,
+            errors=[],
             filename=validator.filename,
             version=validator.version,
             data_type="TransXChange",
@@ -64,7 +67,7 @@ class TestTransXChange24Document:
         validator = TransXChangeValidator(txc24)
         expected = ValidationResult(
             status=ValidationResult.OK,
-            error=None,
+            errors=[],
             filename=validator.filename,
             version=validator.version,
             data_type=validator.name,
@@ -75,14 +78,30 @@ class TestTransXChange24Document:
     def test_validate_malformed_file(self, txc24invalid):
         validator = TransXChangeValidator(txc24invalid)
         actual = validator.validate()
-        expected_error = (
-            "Element '{http://www.transxchange.org.uk/}Latitude': "
-            "'Hello,World' is not a valid value of the atomic type "
-            "'{http://www.transxchange.org.uk/}LatitudeType'., line 120"
-        )
+        expected_errors = [
+            ValidationError(
+                filename=Path(validator.filename).name,
+                line=32,
+                type_name="SCHEMAV_CVC_DATATYPE_VALID_1_2_1",
+                message=Violation(
+                    "Latitude",
+                    "'blah' is not a valid value of the atomic type 'LatitudeType'.",
+                ),
+            ),
+            ValidationError(
+                filename=Path(validator.filename).name,
+                line=120,
+                type_name="SCHEMAV_CVC_DATATYPE_VALID_1_2_1",
+                message=Violation(
+                    "Latitude",
+                    "'Hello,World' is not a valid value of the atomic type 'LatitudeType'.",
+                ),
+            ),
+        ]
+
         expected = ValidationResult(
             status=ValidationResult.ERROR,
-            error=expected_error,
+            errors=expected_errors,
             filename=validator.filename,
             version=validator.version,
             data_type=validator.name,
@@ -104,7 +123,7 @@ class TestNeTExValidator:
             filename=validator.filename,
             version=validator.version,
             data_type=validator.name,
-            error=None,
+            errors=[],
         )
         assert actual == expected
 
@@ -123,6 +142,6 @@ class TestSiriValidator:
             filename=validator.filename,
             version=validator.version,
             data_type=validator.name,
-            error=None,
+            errors=[],
         )
         assert actual == expected

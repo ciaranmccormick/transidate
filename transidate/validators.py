@@ -1,12 +1,21 @@
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import Optional
+from typing import List, Optional
 
 from lxml import etree
 from transidate.constants import NETEX_XSD_URLS, SIRI_XSD_URLS, TXC_XSD_URLS
 from transidate.typing import XMLSchema
-from transidate.xsd import XSDConfig, XSDDownloader
+from transidate.violations import Violation, ViolationProcessor
+from transidate.xsd import Config, DownloaderFactory
+
+
+@dataclass
+class ValidationError:
+    filename: str
+    line: int
+    message: Violation
+    type_name: str
 
 
 @dataclass
@@ -18,7 +27,7 @@ class ValidationResult:
     status: int
     data_type: Optional[str]
     version: str
-    error: Optional[str]
+    errors: List[ValidationError]
 
 
 class DocumentType(Enum):
@@ -38,6 +47,9 @@ class XMLValidator:
         self._source = source
         self._tree = etree.parse(source)
 
+    def __repr__(self):
+        return f"{self.__class__.__name__}(souce={self._source!r})"
+
     @property
     def filename(self):
         if hasattr(self._source, "filename"):
@@ -56,30 +68,38 @@ class XMLValidator:
 
         return root.get(self.version_key, "")
 
-    def get_config(self) -> XSDConfig:
+    def get_config(self) -> Config:
         raise NotImplementedError
 
     def validate(self, schema: Optional[XMLSchema] = None) -> ValidationResult:
         """Validate an XML file."""
+        errors = []
+        status = ValidationResult.OK
         if schema is None:
-            loader = XSDDownloader.from_xsd_config(self.get_config())
-            schema = loader.download_xsd()
+            config = self.get_config()
+            factory = DownloaderFactory(config)
+            downloader = factory.get_downloader()
+            schema = downloader.download()
 
         try:
             schema.assertValid(self._tree)
-        except etree.DocumentInvalid as err:
-            return ValidationResult(
-                filename=self.filename,
-                status=ValidationResult.ERROR,
-                error=str(err),
-                version=self.version,
-                data_type=self.name,
-            )
+        except etree.DocumentInvalid as exc:
+            processor = ViolationProcessor()
+            status = ValidationResult.ERROR
+            errors = [
+                ValidationError(
+                    message=processor.process(entry.message),
+                    filename=Path(entry.filename).name,
+                    type_name=entry.type_name,
+                    line=entry.line,
+                )
+                for entry in exc.error_log
+            ]
 
         return ValidationResult(
             filename=self.filename,
-            status=ValidationResult.OK,
-            error=None,
+            status=status,
+            errors=errors,
             version=self.version,
             data_type=self.name,
         )
@@ -89,30 +109,30 @@ class TransXChangeValidator(XMLValidator):
     version_key = "SchemaVersion"
     name = "TransXChange"
 
-    def get_config(self):
+    def get_config(self) -> Config:
         root = Path("TransXChange_general.xsd")
-        url = TXC_XSD_URLS.get(self.version)
-        return XSDConfig(url, root)
+        url = TXC_XSD_URLS.get(self.version, "")
+        return Config(url, root)
 
 
 class NeTExValidator(XMLValidator):
     version_key = "version"
     name = "NeTEx"
 
-    def get_config(self):
+    def get_config(self) -> Config:
         root = Path("xsd").joinpath("NeTEx_publication.xsd")
-        url = NETEX_XSD_URLS.get(self.version)
-        return XSDConfig(url, root)
+        url = NETEX_XSD_URLS.get(self.version, "")
+        return Config(url, root)
 
 
 class SiriValidator(XMLValidator):
     version_key = "version"
     name = "Siri"
 
-    def get_config(self):
+    def get_config(self) -> Config:
         root = Path("xsd").joinpath("siri.xsd")
-        url = SIRI_XSD_URLS.get(self.version)
-        return XSDConfig(url, root)
+        url = SIRI_XSD_URLS.get(self.version, "")
+        return Config(url, root)
 
 
 class ValidatorFactory:
@@ -120,13 +140,12 @@ class ValidatorFactory:
         self._source = source
         self._tree = etree.parse(source)
 
-    def get_validator(self):
+    def get_validator(self) -> XMLValidator:
         root = self._tree.getroot()
         nsmap = root.nsmap.get(None)
 
-        if "transxchange" in nsmap.lower():
-            return TransXChangeValidator(self._source)
-        elif "netex" in nsmap.lower():
+        if "netex" in nsmap.lower():
             return NeTExValidator(self._source)
         elif "siri" in nsmap.lower():
             return SiriValidator(self._source)
+        return TransXChangeValidator(self._source)
