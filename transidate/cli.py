@@ -1,8 +1,13 @@
+from functools import partial
 from pathlib import Path
 
 import click
+import emoji
+from transidate.tables import ErrorTable
 from transidate.validators import ValidationResult, ValidatorFactory
 from transidate.zip import ZipValidator
+
+emojize = partial(emoji.emojize, use_aliases=True)
 
 
 @click.group()
@@ -12,28 +17,27 @@ def cli():
 
 def print_results(result: ValidationResult):
     if result.status == ValidationResult.ERROR:
+        table = ErrorTable(result.errors)
         click.echo("")
-        click.echo("Errors found.")
-        click.echo("=============")
-        click.echo(result.error)
+        click.echo(emojize(f":poop: {result.filename}"))
+        click.echo(table.pretty_errors())
     else:
-        click.echo(
-            f"{result.filename} is a valid {result.data_type} "
-            f"v{result.version} file."
-        )
+        click.echo(emojize(f":white_check_mark: {result.filename}"))
 
 
 def validate_xml_file(fullpath: str):
     factory = ValidatorFactory(fullpath)
     validator = factory.get_validator()
-    click.echo(f"Validating {fullpath}.")
+    click.echo(emojize(f":page_facing_up: {validator.filename}"))
     result = validator.validate()
     print_results(result)
+    click.echo(emojize(":sparkles: Done :sparkles:"))
 
 
 def validate_zip_file(fullpath: str):
     with open(fullpath, "rb") as f_:
         validator = ZipValidator(f_)
+        click.echo(emojize(f":open_file_folder: {fullpath}"))
         for result in validator.validate_files():
             print_results(result)
 
