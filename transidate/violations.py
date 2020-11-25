@@ -26,12 +26,14 @@ class ViolationProcessor:
 
     def _get_element_name(self, text):
         """Extracts the offending element from a lxml error message."""
-        if match := self.element_regex.match(text):
+        match = self.element_regex.match(text)
+        if match:
             return match.group(1)
         return ""
 
     def _get_details(self, text):
         """Extracts the error details from an lxml error message."""
-        if match := self.details_regex.match(text):
+        match = self.details_regex.match(text)
+        if match:
             return match.group(1)
         return ""
