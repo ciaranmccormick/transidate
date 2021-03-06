@@ -1,21 +1,17 @@
+import io
+import tempfile
+import zipfile
 from dataclasses import dataclass
-from enum import Enum
 from pathlib import Path
-from typing import List, Optional
+from typing import Dict, KeysView, List, Optional
 
+import requests
 from lxml import etree
-from transidate.constants import NETEX_XSD_URLS, SIRI_XSD_URLS, TXC_XSD_URLS
-from transidate.typing import XMLSchema
-from transidate.violations import Violation, ViolationProcessor
-from transidate.xsd import Config, DownloaderFactory
-
-
-@dataclass
-class ValidationError:
-    filename: str
-    line: int
-    message: Violation
-    type_name: str
+from transidate.console import console
+from transidate.constants import NAPTAN_URL, NETEX_URL, SIRI_URL
+from transidate.datasets import DataSet
+from transidate.exceptions import NotSupported
+from transidate.violations import Violation
 
 
 @dataclass
@@ -23,129 +19,110 @@ class ValidationResult:
     OK = 0
     ERROR = -1
 
-    filename: str
     status: int
-    data_type: Optional[str]
-    version: str
-    errors: List[ValidationError]
+    violations: List[Violation]
 
 
-class DocumentType(Enum):
-    Other = -1
-    TransXChange = 0
-    NeTEx = 1
-    Siri = 2
+class Validator:
+    def __init__(self, url: str, root_path: str):
+        self.url = url
+        self.root_path = root_path
+        self._schema: Optional[etree.XMLSchema] = None
 
-
-class XMLValidator:
-    version_key: Optional[str] = None
-    name: Optional[str] = None
-
-    def __init__(self, source):
-        if hasattr(source, "seek"):
-            source.seek(0)
-        self._source = source
-        self._tree = etree.parse(source)
-
-    def __repr__(self):
-        return f"{self.__class__.__name__}(souce={self._source!r})"
-
-    @property
-    def filename(self):
-        if hasattr(self._source, "filename"):
-            return self._source.filename
-        elif hasattr(self._source, "name"):
-            return self._source.name
-        else:
-            return self._source
-
-    @property
-    def version(self) -> str:
-        """Get the schema version of the document."""
-        root = self._tree.getroot()
-        if self.version_key is None:
-            raise ValueError
-
-        return root.get(self.version_key, "")
-
-    def get_config(self) -> Config:
-        raise NotImplementedError
-
-    def validate(self, schema: Optional[XMLSchema] = None) -> ValidationResult:
-        """Validate an XML file."""
-        errors = []
-        status = ValidationResult.OK
-        if schema is None:
-            config = self.get_config()
-            factory = DownloaderFactory(config)
-            downloader = factory.get_downloader()
-            schema = downloader.download()
-
+    def get_xsd(self, schema_path: Path) -> etree.XMLSchema:
+        fullpath = schema_path.joinpath(self.root_path).as_posix()
         try:
-            schema.assertValid(self._tree)
-        except etree.DocumentInvalid as exc:
-            processor = ViolationProcessor()
-            status = ValidationResult.ERROR
-            errors = [
-                ValidationError(
-                    message=processor.process(entry.message),
-                    filename=Path(entry.filename).name,
-                    type_name=entry.type_name,
-                    line=entry.line,
-                )
-                for entry in exc.error_log
-            ]
+            console.print(f"Parsing schema file {self.root_path}.")
+            doc = etree.parse(fullpath)
+        except OSError:
+            raise NotSupported(f"{fullpath!s} is not a valid XMLSource.")
+        schema = etree.XMLSchema(doc)
+        return schema
 
-        return ValidationResult(
-            filename=self.filename,
-            status=status,
-            errors=errors,
-            version=self.version,
-            data_type=self.name,
-        )
+    @property
+    def schema(self) -> etree.XMLSchema:
+        if self._schema:
+            return self._schema
 
+        console.print(f"Fetching schema from {self.url}.", overflow="ellipsis")
+        response = requests.get(self.url)
+        with tempfile.TemporaryDirectory() as tempdir:
+            with zipfile.ZipFile(io.BytesIO(response.content)) as zf:
+                console.print(f"Extracting schema to {tempdir}.")
+                zf.extractall(tempdir)
+                self._schema = self.get_xsd(Path(tempdir))
+        return self._schema
 
-class TransXChangeValidator(XMLValidator):
-    version_key = "SchemaVersion"
-    name = "TransXChange"
+    def validate(self, dataset: DataSet) -> ValidationResult:
+        violations = []
+        status = ValidationResult.OK
+        for d in dataset.documents():
+            console.print(f"Validating {d.name}.")
+            try:
+                self.schema.assertValid(d.tree)
+            except etree.DocumentInvalid:
+                status = ValidationResult.ERROR
+                violations += [
+                    Violation.from_log_entry(e) for e in self.schema.error_log
+                ]
+            except etree.XMLSyntaxError as exc:
+                status = ValidationResult.ERROR
+                violations.append(Violation.from_syntax_error(exc))
 
-    def get_config(self) -> Config:
-        root = Path("TransXChange_general.xsd")
-        url = TXC_XSD_URLS.get(self.version, "")
-        return Config(url, root)
-
-
-class NeTExValidator(XMLValidator):
-    version_key = "version"
-    name = "NeTEx"
-
-    def get_config(self) -> Config:
-        root = Path("xsd").joinpath("NeTEx_publication.xsd")
-        url = NETEX_XSD_URLS.get(self.version, "")
-        return Config(url, root)
-
-
-class SiriValidator(XMLValidator):
-    version_key = "version"
-    name = "Siri"
-
-    def get_config(self) -> Config:
-        root = Path("xsd").joinpath("siri.xsd")
-        url = SIRI_XSD_URLS.get(self.version, "")
-        return Config(url, root)
+        return ValidationResult(status=status, violations=violations)
 
 
 class ValidatorFactory:
-    def __init__(self, source):
-        self._source = source
-        self._tree = etree.parse(source)
+    def __init__(self):
+        self._validators: Dict[str, Validator] = {}
 
-    def get_validator(self) -> XMLValidator:
-        root = self._tree.getroot()
-        nsmap = root.nsmap.get(None)
+    def register_schema(self, key: str, url: str, root_path: str) -> None:
+        self._validators[key] = Validator(url=url, root_path=root_path)
 
-        if "netex" in nsmap.lower():
-            return NeTExValidator(self._source)
-        elif "siri" in nsmap.lower():
-            return SiriValidator(self._source)
-        return TransXChangeValidator(self._source)
+    def get_validator(self, key: str) -> Validator:
+        validator = self._validators.get(key, None)
+        if validator is None:
+            raise ValueError(f"Schema {key!s} was not registered.")
+
+        # Download the schema immediately
+        validator.schema
+        return validator
+
+    @property
+    def registered_schemas(self) -> KeysView[str]:
+        return self._validators.keys()
+
+
+Validators = ValidatorFactory()  # type: ignore
+Validators.register_schema(
+    "TXC2.1",
+    url=NAPTAN_URL + "2.1/TransXChange_schema_2.1.zip",
+    root_path="TransXChange_general.xsd",
+)
+Validators.register_schema(
+    "TXC2.4",
+    url=NAPTAN_URL + "2.4/TransXChange_schema_2.4.zip",
+    root_path="TransXChange_general.xsd",
+)
+Validators.register_schema(
+    "SIRI1.1", url=SIRI_URL + "1.0/siri-1.0.zip", root_path="siri.xsd"
+)
+Validators.register_schema(
+    "SIRI1.3", url=SIRI_URL + "1.3/siri-1.3.zip", root_path="siri.xsd"
+)
+Validators.register_schema(
+    "SIRI1.4", url=SIRI_URL + "1.4/siri-1.4.zip", root_path="siri.xsd"
+)
+Validators.register_schema(
+    "SIRI2.0", url=SIRI_URL + "2.0/Siri_XML-v2.0.zip", root_path="xsd/siri.xsd"
+)
+Validators.register_schema(
+    "NETEX1.0",
+    url=NETEX_URL + "1.10/NeTExXmlSchemaOnly-v1.10_2020.07.29.zip",
+    root_path="xsd/NeTEx_siri.xsd",
+)
+Validators.register_schema(
+    "NETEX1.10",
+    url=NETEX_URL + "1.10/NeTExXmlSchemaOnly-v1.10_2020.07.29.zip",
+    root_path="xsd/NeTEx_siri.xsd",
+)

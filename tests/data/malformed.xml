@@ -1,0 +1,1850 @@
+<TransXChange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="2.4" CreationDateTime="2020-09-11T11:50:40.1949978Z" ModificationDateTime="2020-09-11T11:50:40.1949978Z" Modification="new" RevisionNumber="0" FileName="timetable.xml" xmlns="http://www.transxchange.org.uk/">
+  <StopPoi
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00044</StopPointRef>
+      <CommonName>Moor Lane Car Park</CommonName>
+      <Location>
+        <Longitude>-1.114327</Longitude>
+        <Latitude>53.933172</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00865</StopPointRef>
+      <CommonName>Hogg's Pond</CommonName>
+      <Location>
+        <Longitude>-1.118534</Longitude>
+        <Latitude>53.934497</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00867</StopPointRef>
+      <CommonName>Wain's Road</CommonName>
+      <Location>
+        <Longitude>-1.119263</Longitude>
+        <Latitude>53.936723</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00063</StopPointRef>
+      <CommonName>Sandcroft Road</CommonName>
+      <Location>
+        <Longitude>-1.120013</Longitude>
+        <Latitude>53.942346</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00062</StopPointRef>
+      <CommonName>Sandcroft Road</CommonName>
+      <Location>
+        <Longitude>-1.120245</Longitude>
+        <Latitude>53.942213</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00064</StopPointRef>
+      <CommonName>Acorn Sports Club</CommonName>
+      <Location>
+        <Longitude>-1.121848</Longitude>
+        <Latitude>53.944238</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00065</StopPointRef>
+      <CommonName>Acorn Sports Club</CommonName>
+      <Location>
+        <Longitude>-1.121886</Longitude>
+        <Latitude>53.944571</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA01617</StopPointRef>
+      <CommonName>Chesney Fields</CommonName>
+      <Location>
+        <Longitude>-1.123854</Longitude>
+        <Latitude>53.945924</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA03641</StopPointRef>
+      <CommonName>Ascot Court</CommonName>
+      <Location>
+        <Longitude>-1.126006</Longitude>
+        <Latitude>53.947917</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00074</StopPointRef>
+      <CommonName>Gale Lane</CommonName>
+      <Location>
+        <Longitude>-1.129391</Longitude>
+        <Latitude>53.950746</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00032</StopPointRef>
+      <CommonName>Acomb Methodist Church</CommonName>
+      <Location>
+        <Longitude>-1.131286</Longitude>
+        <Latitude>53.953384</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00874</StopPointRef>
+      <CommonName>Ridgeway</CommonName>
+      <Location>
+        <Longitude>-1.135699</Longitude>
+        <Latitude>53.952239</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00811</StopPointRef>
+      <CommonName>St Aidan's Church</CommonName>
+      <Location>
+        <Longitude>-1.135966</Longitude>
+        <Latitude>53.954065</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00030</StopPointRef>
+      <CommonName>Acomb Post Office</CommonName>
+      <Location>
+        <Longitude>-1.128724</Longitude>
+        <Latitude>53.954238</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00029</StopPointRef>
+      <CommonName>Acomb Shops</CommonName>
+      <Location>
+        <Longitude>-1.124942</Longitude>
+        <Latitude>53.954230</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA01590</StopPointRef>
+      <CommonName>Carr Lane</CommonName>
+      <Location>
+        <Longitude>-1.123651</Longitude>
+        <Latitude>53.959980</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00327</StopPointRef>
+      <CommonName>Runswick Avenue</CommonName>
+      <Location>
+        <Longitude>-1.135172</Longitude>
+        <Latitude>53.957808</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00330</StopPointRef>
+      <CommonName>Beckfield Place</CommonName>
+      <Location>
+        <Longitude>-1.134986</Longitude>
+        <Latitude>53.959451</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00343</StopPointRef>
+      <CommonName>The Ainsty</CommonName>
+      <Location>
+        <Longitude>-1.121531</Longitude>
+        <Latitude>53.963677</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA01580</StopPointRef>
+      <CommonName>Turnberry Drive</CommonName>
+      <Location>
+        <Longitude>-1.134862</Longitude>
+        <Latitude>53.961032</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00332</StopPointRef>
+      <CommonName>The Green Tree</CommonName>
+      <Location>
+        <Longitude>-1.134535</Longitude>
+        <Latitude>53.964301</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00334</StopPointRef>
+      <CommonName>Norman Drive</CommonName>
+      <Location>
+        <Longitude>-1.134011</Longitude>
+        <Latitude>53.966751</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00336</StopPointRef>
+      <CommonName>Beckfield Lane End</CommonName>
+      <Location>
+        <Longitude>-1.133589</Longitude>
+        <Latitude>53.969490</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00011</StopPointRef>
+      <CommonName>Ouse Acres</CommonName>
+      <Location>
+        <Longitude>-1.122182</Longitude>
+        <Latitude>53.964616</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00008</StopPointRef>
+      <CommonName>Plantation Drive</CommonName>
+      <Location>
+        <Longitude>-1.126655</Longitude>
+        <Latitude>53.966446</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00007</StopPointRef>
+      <CommonName>Wheatlands Grove</CommonName>
+      <Location>
+        <Longitude>-1.130127</Longitude>
+        <Latitude>53.968071</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00877</StopPointRef>
+      <CommonName>Low Poppleton Lane</CommonName>
+      <Location>
+        <Longitude>-1.132087</Longitude>
+        <Latitude>53.969155</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA03593</StopPointRef>
+      <CommonName>Manor School</CommonName>
+      <Location>
+        <Longitude>-1.135445</Longitude>
+        <Latitude>53.974842</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA03592</StopPointRef>
+      <CommonName>Manor School</CommonName>
+      <Location>
+        <Longitude>-1.135932</Longitude>
+        <Latitude>53.975600</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>00000000AGGD</StopPointRef>
+      <CommonName>Manor School Grounds</CommonName>
+      <Location>
+        <Longitude>-1.136491</Longitude>
+        <Latitude>53.975146</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA03619</StopPointRef>
+      <CommonName>Millfield Farm</CommonName>
+      <Location>
+        <Longitude>-1.138606</Longitude>
+        <Latitude>53.978298</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA03620</StopPointRef>
+      <CommonName>Millfield Farm</CommonName>
+      <Location>
+        <Longitude>-1.138467</Longitude>
+        <Latitude>53.978342</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00892</StopPointRef>
+      <CommonName>Poppleton Playing Fields</CommonName>
+      <Location>
+        <Longitude>-1.141465</Longitude>
+        <Latitude>53.981635</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00891</StopPointRef>
+      <CommonName>Poppleton Playing Fields</CommonName>
+      <Location>
+        <Longitude>-1.141558</Longitude>
+        <Latitude>53.981555</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00677</StopPointRef>
+      <CommonName>Millfield Gardens</CommonName>
+      <Location>
+        <Longitude>-1.143870</Longitude>
+        <Latitude>53.984052</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00676</StopPointRef>
+      <CommonName>Long Ridge Lane East</CommonName>
+      <Location>
+        <Longitude>-1.142617</Longitude>
+        <Latitude>53.981967</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00675</StopPointRef>
+      <CommonName>Long Ridge Drive</CommonName>
+      <Location>
+        <Longitude>-1.145859</Longitude>
+        <Latitude>53.980749</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00678</StopPointRef>
+      <CommonName>Ebor Way</CommonName>
+      <Location>
+        <Longitude>-1.146108</Longitude>
+        <Latitude>53.986477</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00679</StopPointRef>
+      <CommonName>Lord Nelson</CommonName>
+      <Location>
+        <Longitude>-1.148384</Longitude>
+        <Latitude>53.987814</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00674</StopPointRef>
+      <CommonName>Long Ridge Lane West</CommonName>
+      <Location>
+        <Longitude>-1.150785</Longitude>
+        <Latitude>53.979220</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00684</StopPointRef>
+      <CommonName>The Green</CommonName>
+      <Location>
+        <Longitude>-1.152800</Longitude>
+        <Latitude>53.979855</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00680</StopPointRef>
+      <CommonName>Riverside Gardens</CommonName>
+      <Location>
+        <Longitude>-1.151768</Longitude>
+        <Latitude>53.987865</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00681</StopPointRef>
+      <CommonName>Ouse Moor Lane</CommonName>
+      <Location>
+        <Longitude>-1.155553</Longitude>
+        <Latitude>53.986229</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00683</StopPointRef>
+      <CommonName>Lime Tree House</CommonName>
+      <Location>
+        <Longitude>-1.153715</Longitude>
+        <Latitude>53.982135</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00682</StopPointRef>
+      <CommonName>Poppleton Ousebank School</CommonName>
+      <Location>
+        <Longitude>-1.153796</Longitude>
+        <Latitude>53.984131</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00893</StopPointRef>
+      <CommonName>Kyle Way</CommonName>
+      <Location>
+        <Longitude>-1.136287</Longitude>
+        <Latitude>53.978326</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA01072</StopPointRef>
+      <CommonName>Kyle Way</CommonName>
+      <Location>
+        <Longitude>-1.136822</Longitude>
+        <Latitude>53.978303</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00697</StopPointRef>
+      <CommonName>Riverside Farm</CommonName>
+      <Location>
+        <Longitude>-1.125992</Longitude>
+        <Latitude>53.988660</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00696</StopPointRef>
+      <CommonName>Riverside Farm</CommonName>
+      <Location>
+        <Longitude>-1.127475</Longitude>
+        <Latitude>53.989974</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00695</StopPointRef>
+      <CommonName>Fairfield Manor</CommonName>
+      <Location>
+        <Longitude>-1.130613</Longitude>
+        <Latitude>53.993817</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00694</StopPointRef>
+      <CommonName>Fairfield Manor</CommonName>
+      <Location>
+        <Longitude>-1.131424</Longitude>
+        <Latitude>53.994407</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00685</StopPointRef>
+      <CommonName>Fairfield Cottages</CommonName>
+      <Location>
+        <Longitude>-1.134518</Longitude>
+        <Latitude>53.997189</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00686</StopPointRef>
+      <CommonName>Fairfield Cottages</CommonName>
+      <Location>
+        <Longitude>-1.133259</Longitude>
+        <Latitude>53.996424</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00785</StopPointRef>
+      <CommonName>Fairfields Drive</CommonName>
+      <Location>
+        <Longitude>-1.132813</Longitude>
+        <Latitude>53.997329</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00691</StopPointRef>
+      <CommonName>Blacksmith's Arms</CommonName>
+      <Location>
+        <Longitude>-1.135987</Longitude>
+        <Latitude>53.999455</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00784</StopPointRef>
+      <CommonName>Crookhill Cottage</CommonName>
+      <Location>
+        <Longitude>-1.132992</Longitude>
+        <Latitude>54.001186</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00689</StopPointRef>
+      <CommonName>Brecksfield</CommonName>
+      <Location>
+        <Longitude>-1.129552</Longitude>
+        <Latitude>53.999318</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00698</StopPointRef>
+      <CommonName>Manor Lane</CommonName>
+      <Location>
+        <Longitude>-1.120948</Longitude>
+        <Latitude>53.985558</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00699</StopPointRef>
+      <CommonName>Manor Lane</CommonName>
+      <Location>
+        <Longitude>-1.121555</Longitude>
+        <Latitude>53.985697</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00701</StopPointRef>
+      <CommonName>Howard Drive</CommonName>
+      <Location>
+        <Longitude>-1.119062</Longitude>
+        <Latitude>53.983882</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00386</StopPointRef>
+      <CommonName>Coniston Close</CommonName>
+      <Location>
+        <Longitude>-1.116039</Longitude>
+        <Latitude>53.982637</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00916</StopPointRef>
+      <CommonName>Bowness Drive</CommonName>
+      <Location>
+        <Longitude>-1.113366</Longitude>
+        <Latitude>53.982833</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00915</StopPointRef>
+      <CommonName>The Mitre</CommonName>
+      <Location>
+        <Longitude>-1.117485</Longitude>
+        <Latitude>53.983475</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00385</StopPointRef>
+      <CommonName>Vernon Road</CommonName>
+      <Location>
+        <Longitude>-1.114758</Longitude>
+        <Latitude>53.984066</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00387</StopPointRef>
+      <CommonName>Clifton with Rawcliffe School</CommonName>
+      <Location>
+        <Longitude>-1.110617</Longitude>
+        <Latitude>53.981572</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00388</StopPointRef>
+      <CommonName>Eastholme Drive</CommonName>
+      <Location>
+        <Longitude>-1.108450</Longitude>
+        <Latitude>53.980217</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00806</StopPointRef>
+      <CommonName>Clifton with Rawcliffe School</CommonName>
+      <Location>
+        <Longitude>-1.110802</Longitude>
+        <Latitude>53.981493</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYB01546</StopPointRef>
+      <CommonName>Eastholme Drive</CommonName>
+      <Location>
+        <Longitude>-1.108528</Longitude>
+        <Latitude>53.980137</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00403</StopPointRef>
+      <CommonName>Milton Carr</CommonName>
+      <Location>
+        <Longitude>-1.104324</Longitude>
+        <Latitude>53.979926</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00402</StopPointRef>
+      <CommonName>Milton Carr</CommonName>
+      <Location>
+        <Longitude>-1.104429</Longitude>
+        <Latitude>53.980034</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00805</StopPointRef>
+      <CommonName>Green Lane</CommonName>
+      <Location>
+        <Longitude>-1.099345</Longitude>
+        <Latitude>53.982432</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00404</StopPointRef>
+      <CommonName>Green Lane</CommonName>
+      <Location>
+        <Longitude>-1.100412</Longitude>
+        <Latitude>53.981748</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA03682</StopPointRef>
+      <CommonName>Aldi</CommonName>
+      <Location>
+        <Longitude>-1.096108</Longitude>
+        <Latitude>53.984026</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA03681</StopPointRef>
+      <CommonName>Aldi</CommonName>
+      <Location>
+        <Longitude>-1.096243</Longitude>
+        <Latitude>53.984108</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00405</StopPointRef>
+      <CommonName>Tower Court</CommonName>
+      <Location>
+        <Longitude>-1.099423</Longitude>
+        <Latitude>53.985165</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA01084</StopPointRef>
+      <CommonName>Caravan Site</CommonName>
+      <Location>
+        <Longitude>-1.095330</Longitude>
+        <Latitude>53.985467</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00406</StopPointRef>
+      <CommonName>Tower Court</CommonName>
+      <Location>
+        <Longitude>-1.099643</Longitude>
+        <Latitude>53.985571</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00407</StopPointRef>
+      <CommonName>Rishworth Grove</CommonName>
+      <Location>
+        <Longitude>-1.102545</Longitude>
+        <Latitude>53.983957</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00408</StopPointRef>
+      <CommonName>Lakeside Primary School</CommonName>
+      <Location>
+        <Longitude>-1.104231</Longitude>
+        <Latitude>53.984985</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00804</StopPointRef>
+      <CommonName>Rishworth Grove</CommonName>
+      <Location>
+        <Longitude>-1.102649</Longitude>
+        <Latitude>53.984066</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00409</StopPointRef>
+      <CommonName>Lakeside Primary School</CommonName>
+      <Location>
+        <Longitude>-1.103987</Longitude>
+        <Latitude>53.984984</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+    <AnnotatedStopPointRef>
+      <StopPointRef>3290YYA00410</StopPointRef>
+      <CommonName>Gouthwaith Close</CommonName>
+      <Location>
+        <Longitude>-1.104654</Longitude>
+        <Latitude>53.987307</Latitude>
+      </Location>
+    </AnnotatedStopPointRef>
+  </StopPoints>
+  <JourneyPatternSections>
+    <JourneyPatternSection id="js_1">
+      <JourneyPatternTimingLink id="jptl_1">
+        <From>
+          <Activity>pickUp</Activity>
+          <StopPointRef>3290YYA00409</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00804</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_2">
+        <From>
+          <StopPointRef>3290YYA00804</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00406</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_3">
+        <From>
+          <StopPointRef>3290YYA00406</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA01084</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_4">
+        <From>
+          <StopPointRef>3290YYA01084</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA03682</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_5">
+        <From>
+          <StopPointRef>3290YYA03682</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00404</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_6">
+        <From>
+          <StopPointRef>3290YYA00404</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00403</StopPointRef>
+        </To>
+        <RunTime>PT5M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_7">
+        <From>
+          <StopPointRef>3290YYA00403</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYB01546</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_8">
+        <From>
+          <StopPointRef>3290YYB01546</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00806</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_9">
+        <From>
+          <StopPointRef>3290YYA00806</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00385</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_10">
+        <From>
+          <StopPointRef>3290YYA00385</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00915</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_11">
+        <From>
+          <StopPointRef>3290YYA00915</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00701</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_12">
+        <From>
+          <StopPointRef>3290YYA00701</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00699</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_13">
+        <From>
+          <StopPointRef>3290YYA00699</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00697</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_14">
+        <From>
+          <StopPointRef>3290YYA00697</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00694</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_15">
+        <From>
+          <StopPointRef>3290YYA00694</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00685</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_16">
+        <From>
+          <StopPointRef>3290YYA00685</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00691</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_17">
+        <From>
+          <StopPointRef>3290YYA00691</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00784</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_18">
+        <From>
+          <StopPointRef>3290YYA00784</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00689</StopPointRef>
+        </To>
+        <RunTime>PT3M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_19">
+        <From>
+          <StopPointRef>3290YYA00689</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00785</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_20">
+        <From>
+          <StopPointRef>3290YYA00785</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00686</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_21">
+        <From>
+          <StopPointRef>3290YYA00686</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00695</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_22">
+        <From>
+          <StopPointRef>3290YYA00695</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00696</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_23">
+        <From>
+          <StopPointRef>3290YYA00696</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00893</StopPointRef>
+        </To>
+        <RunTime>PT5M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_24">
+        <From>
+          <StopPointRef>3290YYA00893</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA03619</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_25">
+        <From>
+          <StopPointRef>3290YYA03619</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00891</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_26">
+        <From>
+          <StopPointRef>3290YYA00891</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00677</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_27">
+        <From>
+          <StopPointRef>3290YYA00677</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00678</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_28">
+        <From>
+          <StopPointRef>3290YYA00678</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00680</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_29">
+        <From>
+          <StopPointRef>3290YYA00680</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00681</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_30">
+        <From>
+          <StopPointRef>3290YYA00681</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00682</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_31">
+        <From>
+          <StopPointRef>3290YYA00682</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00683</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_32">
+        <From>
+          <StopPointRef>3290YYA00683</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00684</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_33">
+        <From>
+          <StopPointRef>3290YYA00684</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00674</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_34">
+        <From>
+          <StopPointRef>3290YYA00674</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00675</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_35">
+        <From>
+          <StopPointRef>3290YYA00675</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00676</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_36">
+        <From>
+          <StopPointRef>3290YYA00676</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00892</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_37">
+        <From>
+          <StopPointRef>3290YYA00892</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA03620</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_38">
+        <From>
+          <StopPointRef>3290YYA03620</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA03592</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_39">
+        <From>
+          <StopPointRef>3290YYA03592</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00336</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_40">
+        <From>
+          <StopPointRef>3290YYA00336</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00334</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_41">
+        <From>
+          <StopPointRef>3290YYA00334</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00332</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_42">
+        <From>
+          <StopPointRef>3290YYA00332</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA01580</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_43">
+        <From>
+          <StopPointRef>3290YYA01580</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00330</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_44">
+        <From>
+          <StopPointRef>3290YYA00330</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00327</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_45">
+        <From>
+          <StopPointRef>3290YYA00327</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00811</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_46">
+        <From>
+          <StopPointRef>3290YYA00811</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00874</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_47">
+        <From>
+          <StopPointRef>3290YYA00874</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00074</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_48">
+        <From>
+          <StopPointRef>3290YYA00074</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA03641</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_49">
+        <From>
+          <StopPointRef>3290YYA03641</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA01617</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_50">
+        <From>
+          <StopPointRef>3290YYA01617</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00065</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_51">
+        <From>
+          <StopPointRef>3290YYA00065</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00063</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_52">
+        <From>
+          <StopPointRef>3290YYA00063</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00867</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_53">
+        <From>
+          <StopPointRef>3290YYA00867</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00865</StopPointRef>
+        </To>
+        <RunTime>PT6M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_54">
+        <From>
+          <StopPointRef>3290YYA00865</StopPointRef>
+        </From>
+        <To>
+          <Activity>setDown</Activity>
+          <StopPointRef>3290YYA00044</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RunTime>PT4M</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="js_2">
+      <JourneyPatternTimingLink id="jptl_55">
+        <From>
+          <Activity>pickUp</Activity>
+          <StopPointRef>00000000AGGD</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA01072</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_56">
+        <From>
+          <StopPointRef>3290YYA01072</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00697</StopPointRef>
+        </To>
+        <RunTime>PT5M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_57">
+        <From>
+          <StopPointRef>3290YYA00697</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00694</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_58">
+        <From>
+          <StopPointRef>3290YYA00694</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00685</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_59">
+        <From>
+          <StopPointRef>3290YYA00685</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00691</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_60">
+        <From>
+          <StopPointRef>3290YYA00691</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00784</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_61">
+        <From>
+          <StopPointRef>3290YYA00784</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00689</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_62">
+        <From>
+          <StopPointRef>3290YYA00689</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00785</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_63">
+        <From>
+          <StopPointRef>3290YYA00785</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00686</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_64">
+        <From>
+          <StopPointRef>3290YYA00686</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00695</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_65">
+        <From>
+          <StopPointRef>3290YYA00695</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00696</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_66">
+        <From>
+          <StopPointRef>3290YYA00696</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00698</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_67">
+        <From>
+          <StopPointRef>3290YYA00698</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00386</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_68">
+        <From>
+          <StopPointRef>3290YYA00386</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00916</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_69">
+        <From>
+          <StopPointRef>3290YYA00916</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00387</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_70">
+        <From>
+          <StopPointRef>3290YYA00387</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00388</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_71">
+        <From>
+          <StopPointRef>3290YYA00388</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00402</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_72">
+        <From>
+          <StopPointRef>3290YYA00402</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00805</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_73">
+        <From>
+          <StopPointRef>3290YYA00805</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA03681</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_74">
+        <From>
+          <StopPointRef>3290YYA03681</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00405</StopPointRef>
+        </To>
+        <RunTime>PT3M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_75">
+        <From>
+          <StopPointRef>3290YYA00405</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00407</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_76">
+        <From>
+          <StopPointRef>3290YYA00407</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00408</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_77">
+        <From>
+          <StopPointRef>3290YYA00408</StopPointRef>
+        </From>
+        <To>
+          <Activity>setDown</Activity>
+          <StopPointRef>3290YYA00410</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+    <JourneyPatternSection id="js_3">
+      <JourneyPatternTimingLink id="jptl_78">
+        <From>
+          <Activity>pickUp</Activity>
+          <StopPointRef>3290YYA00044</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00865</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_79">
+        <From>
+          <StopPointRef>3290YYA00865</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00867</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_80">
+        <From>
+          <StopPointRef>3290YYA00867</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00062</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_81">
+        <From>
+          <StopPointRef>3290YYA00062</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00064</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_82">
+        <From>
+          <StopPointRef>3290YYA00064</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA01617</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_83">
+        <From>
+          <StopPointRef>3290YYA01617</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA03641</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_84">
+        <From>
+          <StopPointRef>3290YYA03641</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00074</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_85">
+        <From>
+          <StopPointRef>3290YYA00074</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00032</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_86">
+        <From>
+          <StopPointRef>3290YYA00032</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00030</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_87">
+        <From>
+          <StopPointRef>3290YYA00030</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00029</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_88">
+        <From>
+          <StopPointRef>3290YYA00029</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA01590</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_89">
+        <From>
+          <StopPointRef>3290YYA01590</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00343</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_90">
+        <From>
+          <StopPointRef>3290YYA00343</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00011</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_91">
+        <From>
+          <StopPointRef>3290YYA00011</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00008</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_92">
+        <From>
+          <StopPointRef>3290YYA00008</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00007</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_93">
+        <From>
+          <StopPointRef>3290YYA00007</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00877</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_94">
+        <From>
+          <StopPointRef>3290YYA00877</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA03593</StopPointRef>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_95">
+        <From>
+          <StopPointRef>3290YYA03593</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA03619</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_96">
+        <From>
+          <StopPointRef>3290YYA03619</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00891</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_97">
+        <From>
+          <StopPointRef>3290YYA00891</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00677</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_98">
+        <From>
+          <StopPointRef>3290YYA00677</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00678</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_99">
+        <From>
+          <StopPointRef>3290YYA00678</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00679</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_100">
+        <From>
+          <StopPointRef>3290YYA00679</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00680</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_101">
+        <From>
+          <StopPointRef>3290YYA00680</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00681</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_102">
+        <From>
+          <StopPointRef>3290YYA00681</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00682</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_103">
+        <From>
+          <StopPointRef>3290YYA00682</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00683</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_104">
+        <From>
+          <StopPointRef>3290YYA00683</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00684</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_105">
+        <From>
+          <StopPointRef>3290YYA00684</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00674</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_106">
+        <From>
+          <StopPointRef>3290YYA00674</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00675</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_107">
+        <From>
+          <StopPointRef>3290YYA00675</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00676</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_108">
+        <From>
+          <StopPointRef>3290YYA00676</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00892</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_109">
+        <From>
+          <StopPointRef>3290YYA00892</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA03620</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_110">
+        <From>
+          <StopPointRef>3290YYA03620</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA01072</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_111">
+        <From>
+          <StopPointRef>3290YYA01072</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00697</StopPointRef>
+        </To>
+        <RunTime>PT4M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_112">
+        <From>
+          <StopPointRef>3290YYA00697</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00694</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_113">
+        <From>
+          <StopPointRef>3290YYA00694</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00685</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_114">
+        <From>
+          <StopPointRef>3290YYA00685</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00691</StopPointRef>
+        </To>
+        <RunTime>PT0S</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_115">
+        <From>
+          <StopPointRef>3290YYA00691</StopPointRef>
+        </From>
+        <To>
+          <StopPointRef>3290YYA00784</StopPointRef>
+        </To>
+        <RunTime>PT1M</RunTime>
+      </JourneyPatternTimingLink>
+      <JourneyPatternTimingLink id="jptl_116">
+        <From>
+          <StopPointRef>3290YYA00784</StopPointRef>
+        </From>
+        <To>
+          <Activity>setDown</Activity>
+          <StopPointRef>3290YYA00689</StopPointRef>
+          <TimingStatus>PTP</TimingStatus>
+        </To>
+        <RunTime>PT2M</RunTime>
+      </JourneyPatternTimingLink>
+    </JourneyPatternSection>
+  </JourneyPatternSections>
+  <Operators>
+    <Operator id="tkt_oid">
+      <NationalOperatorCode>RELD</NationalOperatorCode>
+      <OperatorCode>RELD</OperatorCode>
+      <OperatorShortName>Reliance Motor Services</OperatorShortName>
+      <OperatorNameOnLicence>Reliance Motor Services</OperatorNameOnLicence>
+      <TradingName>Reliance Motor Services</TradingName>
+    </Operator>
+  </Operators>
+  <Services>
+    <Service>
+      <ServiceCode>19M</ServiceCode>
+      <Lines>
+        <Line id="l_1">
+          <LineName>19M</LineName>
+        </Line>
+      </Lines>
+      <OperatingPeriod>
+        <StartDate>2020-09-02</StartDate>
+      </OperatingPeriod>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <MondayToFriday />
+          </DaysOfWeek>
+        </RegularDayType>
+        <BankHolidayOperation>
+          <DaysOfNonOperation>
+            <ChristmasDay />
+            <BoxingDay />
+            <GoodFriday />
+            <NewYearsDay />
+            <LateSummerBankHolidayNotScotland />
+            <MayDay />
+            <EasterMonday />
+            <SpringBank />
+          </DaysOfNonOperation>
+        </BankHolidayOperation>
+      </OperatingProfile>
+      <RegisteredOperatorRef>tkt_oid</RegisteredOperatorRef>
+      <Description>York, York College to Oakdale Road, Clifton Moor</Description>
+      <StandardService>
+        <Origin>York, York College</Origin>
+        <Destination>Oakdale Road, Clifton Moor</Destination>
+        <JourneyPattern id="jp_1">
+          <DestinationDisplay>Moor Lane Car Park</DestinationDisplay>
+          <Direction>inbound</Direction>
+          <JourneyPatternSectionRefs>js_1</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="jp_2">
+          <DestinationDisplay>Gouthwaith Close</DestinationDisplay>
+          <Direction>outbound</Direction>
+          <JourneyPatternSectionRefs>js_2</JourneyPatternSectionRefs>
+        </JourneyPattern>
+        <JourneyPattern id="jp_3">
+          <DestinationDisplay>Brecksfield</DestinationDisplay>
+          <Direction>outbound</Direction>
+          <JourneyPatternSectionRefs>js_3</JourneyPatternSectionRefs>
+        </JourneyPattern>
+      </StandardService>
+    </Service>
+  </Services>
+  <VehicleJourneys>
+    <VehicleJourney>
+      <Operational>
+        <TicketMachine>
+          <JourneyCode>0740</JourneyCode>
+        </TicketMachine>
+      </Operational>
+      <VehicleJourneyCode>vj_1</VehicleJourneyCode>
+      <ServiceRef>19M</ServiceRef>
+      <LineRef>l_1</LineRef>
+      <JourneyPatternRef>jp_1</JourneyPatternRef>
+      <DepartureTime>07:40:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <Operational>
+        <TicketMachine>
+          <JourneyCode>15:30</JourneyCode>
+        </TicketMachine>
+      </Operational>
+      <VehicleJourneyCode>vj_2</VehicleJourneyCode>
+      <ServiceRef>19M</ServiceRef>
+      <LineRef>l_1</LineRef>
+      <JourneyPatternRef>jp_2</JourneyPatternRef>
+      <DepartureTime>15:30:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <Operational>
+        <TicketMachine>
+          <JourneyCode>16:45</JourneyCode>
+        </TicketMachine>
+      </Operational>
+      <VehicleJourneyCode>vj_3</VehicleJourneyCode>
+      <ServiceRef>19M</ServiceRef>
+      <LineRef>l_1</LineRef>
+      <JourneyPatternRef>jp_3</JourneyPatternRef>
+      <DepartureTime>16:45:00</DepartureTime>
+    </VehicleJourney>
+  </VehicleJourneys>
+</TransXChange>
