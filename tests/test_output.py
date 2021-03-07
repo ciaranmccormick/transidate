@@ -1,5 +1,6 @@
+import csv
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 from freezegun import freeze_time
 
@@ -24,10 +25,23 @@ def test_output_class(txc24):
     assert o.get_output_path() == Path.cwd() / exp_output_path
 
 
-def test_csv_output(txc24):
+def test_csv_get_extension(txc24):
     result = ValidationResult(status=ValidationResult.ERROR, violations=[])
     o = CSVOutput(dataset=txc24, result=result)
     assert o.get_extension() == ".csv"
+
+
+def test_write_csv(txc24):
+    violations = [
+        Violation(filename=txc24.path.name, line=24, message="Violation occurred")
+    ]
+    result = ValidationResult(status=ValidationResult.ERROR, violations=violations)
+    o = CSVOutput(dataset=txc24, result=result)
+    mwriter = Mock(spec=csv.DictWriter, fieldnames=["filename", "line", "message"])
+    expected_called = [v.dict() for v in violations]
+    o._write_csv(mwriter)
+    mwriter.writeheader.assert_called_once()
+    mwriter.writerows.assert_called_once_with(expected_called)
 
 
 @patch("transidate.outputs.console")
