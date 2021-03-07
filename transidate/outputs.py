@@ -1,19 +1,13 @@
 import csv
 from datetime import datetime
 from pathlib import Path
-from typing import Protocol
 
 from transidate.console import console
 from transidate.datasets import DataSet
 from transidate.validators import ValidationResult
 
 
-class IOutput(Protocol):
-    def output(self) -> None:
-        ...
-
-
-class Output(IOutput):
+class Output:
     def __init__(self, dataset: DataSet, result: ValidationResult):
         self.dataset = dataset
         self.result = result
