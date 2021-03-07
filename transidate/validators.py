@@ -31,12 +31,12 @@ class Validator:
         self._schema: Optional[etree.XMLSchema] = None
 
     def get_xsd(self, schema_path: Path) -> etree.XMLSchema:
-        fullpath = schema_path.joinpath(self.root_path).as_posix()
+        fullpath = schema_path / self.root_path
         try:
             console.print(f"Parsing schema file {self.root_path}.")
-            doc = etree.parse(fullpath)
+            doc = etree.parse(fullpath.as_posix())
         except OSError:
-            raise NotSupported(f"{fullpath!s} is not a valid XMLSource.")
+            raise NotSupported(f"Source {self.root_path!r} cannot be parsed.")
         schema = etree.XMLSchema(doc)
         return schema
 

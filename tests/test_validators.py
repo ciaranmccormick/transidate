@@ -1,7 +1,10 @@
+from pathlib import Path
 from typing import Optional
+from unittest.mock import patch
 
 import pytest
 
+from transidate.exceptions import NotSupported
 from transidate.validators import (
     ValidationResult,
     Validator,
@@ -81,3 +84,15 @@ def test_unregistered_validator():
     with pytest.raises(ValueError) as exc:
         factory.get_validator("KEY2")
     assert str(exc.value) == "Schema 'KEY2' was not registered."
+
+
+@patch("transidate.validators.etree.parse", side_effect=OSError)
+def test_get_xsd(mparse):
+    validator = Validator(url="https://afakeurl.url", root_path="root.xsd")
+    path = Path(__file__)
+    with pytest.raises(NotSupported) as exc:
+        validator.get_xsd(path)
+
+    expected_path = path / validator.root_path
+    assert str(exc.value) == "Source 'root.xsd' cannot be parsed."
+    mparse.assert_called_once_with(expected_path.as_posix())
