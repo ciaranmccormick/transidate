@@ -42,7 +42,7 @@ validated again TransXChange v2.4.
 transidate circular.xml --version TXC2.4
 ```
 
-![Validation](imgs/txc24_no_errors.png)
+![No Errors](imgs/no-errors.png)
 
 If transidate finds any schema violations it will print the details of the violation
 such as the file it occurred in, the line number of the violation and details.
@@ -56,7 +56,7 @@ transidate all_uk_txc_2_4.zip --version TXC2.4
 This is iterate over each XML file contained within the zip and collate all the
 violations.
 
-![Errors](imgs/txc24_no_errors.png)
+![Errors](imgs/errors.png)
 
 Transidate also allows you to export any violations to CSV using the `--csv` flag.
 
