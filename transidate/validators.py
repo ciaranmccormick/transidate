@@ -63,7 +63,7 @@ class Validator:
             except etree.DocumentInvalid:
                 status = ValidationResult.ERROR
                 violations += [
-                    Violation.from_log_entry(e) for e in self.schema.error_log
+                    Violation.from_log_entry(e) for e in self.schema.error_log  # type: ignore
                 ]
             except etree.XMLSyntaxError as exc:
                 status = ValidationResult.ERROR
