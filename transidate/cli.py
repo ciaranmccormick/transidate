@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import click
+
 from transidate.console import console
 from transidate.datasets import DataSet
 from transidate.outputs import ConsoleOutput, CSVOutput
@@ -30,8 +31,6 @@ def validate(source: str, version: str, output_csv: bool):
     Validate a transit data file against a specified schema.
     """
     header = "[bold red]"
-    breakpoint()
-
     console.rule(header + "Downloading Schema")
     schema = Validators.get_validator(version)
 
