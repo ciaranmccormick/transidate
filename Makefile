@@ -5,7 +5,6 @@ SHELL:=/usr/bin/env bash
 lint:
 	poetry run mypy transidate tests/*.py
 	poetry run flake8 transidate tests/*.py
-	poetry run doc8 -q docs
 
 .PHONY: unit
 unit:
