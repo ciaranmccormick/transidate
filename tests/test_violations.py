@@ -1,44 +1,25 @@
-from transidate.violations import Violation, ViolationProcessor
+from unittest.mock import Mock
+
+import pytest
+from lxml.etree import XMLSyntaxError, _LogEntry
+
+from transidate.violations import Violation
 
 
-class TestViolationProcessor:
-    message = (
-        "Element '{http://www.transxchange.org.uk/}Latitude': 'Hello,World' "
-        "is not a valid value of the atomic type '{http://www.transxchange.org.uk/}"
-        "LatitudeType'."
-    )
+@pytest.mark.parametrize(
+    "filepath, expected_filename", [("/a/b/file.xml", "file.xml"), (None, "")]
+)
+def test_violation_from_syntax_error(filepath, expected_filename):
+    error = Mock(spec=XMLSyntaxError, filename=filepath, lineno=23, msg="A message")
+    actual = Violation.from_syntax_error(error)
+    expected = Violation(line=23, filename=expected_filename, message="A message")
+    assert actual == expected
 
-    def test_extract_element_from_message(self):
-        processor = ViolationProcessor()
-        cleaned = processor._strip_namespace(self.message)
-        actual = processor._get_element_name(cleaned)
-        expected = "Latitude"
-        assert expected == actual
 
-        expected = ""
-        test_input = "blahblahblah"
-        actual = processor._get_element_name(test_input)
-        assert expected == actual
+def test_violation_from_log_entry():
+    error = Mock(spec=_LogEntry, filename="/a/b/file.xml", line=23, message="A message")
+    violation = Violation.from_log_entry(error)
 
-    def test_strip_namespace(self):
-        processor = ViolationProcessor()
-        cleaned = processor._strip_namespace(self.message)
-        actual = processor._get_details(cleaned)
-        expected = (
-            "'Hello,World' is not a valid value of the atomic type 'LatitudeType'."
-        )
-        assert expected == actual
-
-        expected = ""
-        test_input = "blahblahblah"
-        actual = processor._get_details(test_input)
-        assert expected == actual
-
-    def test_clean_message(self):
-        processor = ViolationProcessor()
-        actual = processor.process(self.message)
-        expected = Violation(
-            "Latitude",
-            "'Hello,World' is not a valid value of the atomic type 'LatitudeType'.",
-        )
-        assert expected == actual
+    assert violation.filename == "file.xml"
+    assert violation.line == 23
+    assert violation.message == "A message"

@@ -1,13 +1,13 @@
-from functools import partial
 from pathlib import Path
 
 import click
-import emoji
-from transidate.tables import ErrorTable
-from transidate.validators import ValidationResult, ValidatorFactory
-from transidate.zip import ZipValidator
 
-emojize = partial(emoji.emojize, use_aliases=True)
+from transidate.console import console
+from transidate.datasets import DataSet
+from transidate.outputs import ConsoleOutput, CSVOutput
+from transidate.validators import ValidationResult, Validators
+
+_SCHEMA_TYPES = Validators.registered_schemas
 
 
 @click.group()
@@ -15,41 +15,37 @@ def cli():
     pass
 
 
-def print_results(result: ValidationResult):
-    if result.status == ValidationResult.ERROR:
-        table = ErrorTable(result.errors)
-        click.echo("")
-        click.echo(emojize(f":poop: {result.filename}"))
-        click.echo(table.pretty_errors())
-    else:
-        click.echo(emojize(f":white_check_mark: {result.filename}"))
-
-
-def validate_xml_file(fullpath: str):
-    factory = ValidatorFactory(fullpath)
-    validator = factory.get_validator()
-    click.echo(emojize(f":page_facing_up: {validator.filename}"))
-    result = validator.validate()
-    print_results(result)
-    click.echo(emojize(":sparkles: Done :sparkles:"))
-
-
-def validate_zip_file(fullpath: str):
-    with open(fullpath, "rb") as f_:
-        validator = ZipValidator(f_)
-        click.echo(emojize(f":open_file_folder: {fullpath}"))
-        for result in validator.validate_files():
-            print_results(result)
-
-
 @cli.command()
-@click.argument("source")
-def validate(source: str):
-    fullpath = str(Path(source).absolute())
+@click.argument("source", type=click.Path(exists=True))
+@click.option(
+    "--version",
+    help="Version of schema to validate against.",
+    type=click.Choice(_SCHEMA_TYPES, case_sensitive=False),
+    default="TXC2.4",
+)
+@click.option(
+    "--csv/--no-csv", "output_csv", help="Write violations to csv.", default=False
+)
+def validate(source: str, version: str, output_csv: bool):
+    """
+    Validate a transit data file against a specified schema.
+    """
+    header = "[bold red]"
+    console.rule(header + "Downloading Schema")
+    schema = Validators.get_validator(version)
 
-    if fullpath.endswith(".xml"):
-        validate_xml_file(fullpath)
-    elif fullpath.endswith(".zip"):
-        validate_zip_file(fullpath)
+    console.rule(header + "Validating Documents")
+    dataset_path = Path(source)
+    dataset = DataSet(dataset_path)
+
+    result = schema.validate(dataset)
+    ok = result.status == ValidationResult.OK
+
+    if ok:
+        console.rule(header + "Results")
+        console.print("No issues found.")
     else:
-        click.echo(f"Can't validate {fullpath}.")
+        console.rule(header + f"Results: {len(result.violations)} Issues found")
+        ConsoleOutput(dataset=dataset, result=result).output()
+        if output_csv:
+            CSVOutput(dataset=dataset, result=result).output()
