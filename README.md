@@ -53,6 +53,8 @@ You can also use transidate to validate a archived collection of files.
 transidate all_uk_txc_2_4.zip --version TXC2.4
 ```
 
+![Zip](imgs/zip.png)
+
 This is iterate over each XML file contained within the zip and collate all the
 violations.
 
