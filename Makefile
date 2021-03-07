@@ -9,7 +9,7 @@ lint:
 
 .PHONY: unit
 unit:
-	poetry run pytest
+	poetry run pytest --cov=transidate --cov-branch --cov-fail-under=90 tests/
 
 .PHONY: package
 package:
