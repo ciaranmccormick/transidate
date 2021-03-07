@@ -7,6 +7,7 @@ from typing import Dict, KeysView, List, Optional
 
 import requests
 from lxml import etree
+
 from transidate.console import console
 from transidate.constants import NAPTAN_URL, NETEX_URL, SIRI_URL
 from transidate.datasets import DataSet
@@ -82,7 +83,7 @@ class ValidatorFactory:
     def get_validator(self, key: str) -> Validator:
         validator = self._validators.get(key, None)
         if validator is None:
-            raise ValueError(f"Schema {key!s} was not registered.")
+            raise ValueError(f"Schema {key!r} was not registered.")
 
         # Download the schema immediately
         validator.schema

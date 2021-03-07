@@ -1,7 +1,13 @@
 from typing import Optional
 
 import pytest
-from transidate.validators import ValidationResult, Validator, Validators
+
+from transidate.validators import (
+    ValidationResult,
+    Validator,
+    ValidatorFactory,
+    Validators,
+)
 
 
 class ValidatorTest:
@@ -22,7 +28,10 @@ class TestTransXChange21Document(ValidatorTest):
 
     def test_validate(self, txc21):
         result = self.validator.validate(txc21)
-        expected = ValidationResult(status=ValidationResult.OK, violations=[],)
+        expected = ValidationResult(
+            status=ValidationResult.OK,
+            violations=[],
+        )
         assert expected == result
 
 
@@ -31,7 +40,10 @@ class TestTransXChange24Document(ValidatorTest):
 
     def test_validate(self, txc24):
         result = self.validator.validate(txc24)
-        expected = ValidationResult(status=ValidationResult.OK, violations=[],)
+        expected = ValidationResult(
+            status=ValidationResult.OK,
+            violations=[],
+        )
         assert expected == result
 
     def test_validate_malformed_file(self, txc24invalid):
@@ -55,3 +67,17 @@ class TestSiriValidator:
         result = validator.validate(siri2)
         assert result.OK == result.status
         assert len(result.violations) == 0
+
+
+def test_validator_factory_registered_schemas():
+    factory = ValidatorFactory()  # type: ignore
+    factory.register_schema("KEY1", url="https://afakeurl.url", root_path="root.xsd")
+    assert list(factory.registered_schemas) == ["KEY1"]
+
+
+def test_unregistered_validator():
+    factory = ValidatorFactory()  # type: ignore
+    factory.register_schema("KEY1", url="https://afakeurl.url", root_path="root.xsd")
+    with pytest.raises(ValueError) as exc:
+        factory.get_validator("KEY2")
+    assert str(exc.value) == "Schema 'KEY2' was not registered."
