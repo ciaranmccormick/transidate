@@ -1,31 +1,24 @@
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Transidate
+name: Release transidate to PyPi
 
 on:
   push:
-    branches:
-      - "feature/*"
+    tags: "*"
 
 jobs:
-  testing:
-    name: testing
+  publish:
+    name: publish
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.7, 3.8, 3.9]
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Setup Python 3
         uses: actions/setup-python@v1
         with:
-          python-version: ${{ matrix.python-version }}
-
-      - name: Display Python version
-        run: python -c "import sys; print(sys.version)"
+          python-version: "3.x"
 
       - name: Install Poetry
         uses: abatilo/actions-poetry@v2.0.0
@@ -51,4 +44,13 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          poetry run pytest --cov=transidate --cov-branch --cov-fail-under=90 tests/
+          poetry run pytest --cov=transidate --cov-branch --cov-fail-under=80 tests/
+
+      - name: Publish to pypi
+        shell: bash
+        env:
+          USERNAME: ${{ secrets.PYPI_USERNAME }}
+          PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        run: |
+          poetry build
+          poetry publish --username "$USERNAME" --password "$PASSWORD"

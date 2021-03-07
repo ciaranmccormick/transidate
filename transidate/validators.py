@@ -7,6 +7,7 @@ from typing import Dict, KeysView, List, Optional
 
 import requests
 from lxml import etree
+
 from transidate.console import console
 from transidate.constants import NAPTAN_URL, NETEX_URL, SIRI_URL
 from transidate.datasets import DataSet
@@ -30,12 +31,12 @@ class Validator:
         self._schema: Optional[etree.XMLSchema] = None
 
     def get_xsd(self, schema_path: Path) -> etree.XMLSchema:
-        fullpath = schema_path.joinpath(self.root_path).as_posix()
+        fullpath = schema_path / self.root_path
         try:
             console.print(f"Parsing schema file {self.root_path}.")
-            doc = etree.parse(fullpath)
+            doc = etree.parse(fullpath.as_posix())
         except OSError:
-            raise NotSupported(f"{fullpath!s} is not a valid XMLSource.")
+            raise NotSupported(f"Source {self.root_path!r} cannot be parsed.")
         schema = etree.XMLSchema(doc)
         return schema
 
@@ -63,7 +64,7 @@ class Validator:
             except etree.DocumentInvalid:
                 status = ValidationResult.ERROR
                 violations += [
-                    Violation.from_log_entry(e) for e in self.schema.error_log
+                    Violation.from_log_entry(e) for e in self.schema.error_log  # type: ignore
                 ]
             except etree.XMLSyntaxError as exc:
                 status = ValidationResult.ERROR
@@ -82,7 +83,7 @@ class ValidatorFactory:
     def get_validator(self, key: str) -> Validator:
         validator = self._validators.get(key, None)
         if validator is None:
-            raise ValueError(f"Schema {key!s} was not registered.")
+            raise ValueError(f"Schema {key!r} was not registered.")
 
         # Download the schema immediately
         validator.schema

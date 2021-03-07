@@ -1,7 +1,16 @@
+from pathlib import Path
 from typing import Optional
+from unittest.mock import patch
 
 import pytest
-from transidate.validators import ValidationResult, Validator, Validators
+
+from transidate.exceptions import NotSupported
+from transidate.validators import (
+    ValidationResult,
+    Validator,
+    ValidatorFactory,
+    Validators,
+)
 
 
 class ValidatorTest:
@@ -22,7 +31,10 @@ class TestTransXChange21Document(ValidatorTest):
 
     def test_validate(self, txc21):
         result = self.validator.validate(txc21)
-        expected = ValidationResult(status=ValidationResult.OK, violations=[],)
+        expected = ValidationResult(
+            status=ValidationResult.OK,
+            violations=[],
+        )
         assert expected == result
 
 
@@ -31,7 +43,10 @@ class TestTransXChange24Document(ValidatorTest):
 
     def test_validate(self, txc24):
         result = self.validator.validate(txc24)
-        expected = ValidationResult(status=ValidationResult.OK, violations=[],)
+        expected = ValidationResult(
+            status=ValidationResult.OK,
+            violations=[],
+        )
         assert expected == result
 
     def test_validate_malformed_file(self, txc24invalid):
@@ -55,3 +70,29 @@ class TestSiriValidator:
         result = validator.validate(siri2)
         assert result.OK == result.status
         assert len(result.violations) == 0
+
+
+def test_validator_factory_registered_schemas():
+    factory = ValidatorFactory()  # type: ignore
+    factory.register_schema("KEY1", url="https://afakeurl.url", root_path="root.xsd")
+    assert list(factory.registered_schemas) == ["KEY1"]
+
+
+def test_unregistered_validator():
+    factory = ValidatorFactory()  # type: ignore
+    factory.register_schema("KEY1", url="https://afakeurl.url", root_path="root.xsd")
+    with pytest.raises(ValueError) as exc:
+        factory.get_validator("KEY2")
+    assert str(exc.value) == "Schema 'KEY2' was not registered."
+
+
+@patch("transidate.validators.etree.parse", side_effect=OSError)
+def test_get_xsd(mparse):
+    validator = Validator(url="https://afakeurl.url", root_path="root.xsd")
+    path = Path(__file__)
+    with pytest.raises(NotSupported) as exc:
+        validator.get_xsd(path)
+
+    expected_path = path / validator.root_path
+    assert str(exc.value) == "Source 'root.xsd' cannot be parsed."
+    mparse.assert_called_once_with(expected_path.as_posix())

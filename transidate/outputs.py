@@ -1,19 +1,13 @@
 import csv
 from datetime import datetime
 from pathlib import Path
-from typing import Protocol
 
 from transidate.console import console
 from transidate.datasets import DataSet
 from transidate.validators import ValidationResult
 
 
-class IOutput(Protocol):
-    def output(self) -> None:
-        ...
-
-
-class Output(IOutput):
+class Output:
     def __init__(self, dataset: DataSet, result: ValidationResult):
         self.dataset = dataset
         self.result = result
@@ -48,12 +42,15 @@ class CSVOutput(Output):
     def get_extension(self) -> str:
         return ".csv"
 
+    def _write_csv(self, writer: csv.DictWriter) -> None:
+        violations = [v.dict() for v in self.result.violations]
+        writer.writeheader()
+        writer.writerows(violations)
+
     def output(self) -> None:
         output_path = self.get_output_path()
-        headers = ["filename", "line", "message"]
         console.print(f"Outputing CSV to {output_path.as_posix()}")
         with output_path.open("w") as f:
+            headers = ["filename", "line", "message"]
             writer = csv.DictWriter(f, fieldnames=headers)
-            writer.writeheader()
-            violations = [v.dict() for v in self.result.violations]
-            writer.writerows(violations)
+            self._write_csv(writer)

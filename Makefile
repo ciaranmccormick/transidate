@@ -5,11 +5,11 @@ SHELL:=/usr/bin/env bash
 lint:
 	poetry run mypy transidate tests/*.py
 	poetry run flake8 transidate tests/*.py
-	poetry run doc8 -q docs
 
 .PHONY: unit
 unit:
-	poetry run pytest
+	poetry run pytest --cov=transidate --cov-branch --cov-fail-under=90 tests/
+	poetry run coverage html
 
 .PHONY: package
 package:
