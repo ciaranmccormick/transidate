@@ -1,6 +1,5 @@
 SHELL:=/usr/bin/env bash
 
-
 .PHONY: lint
 lint:
 	poetry run mypy transidate tests/*.py

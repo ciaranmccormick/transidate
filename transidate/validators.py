@@ -9,7 +9,18 @@ import requests
 from lxml import etree
 
 from transidate.console import console
-from transidate.constants import NAPTAN_URL, NETEX_URL, SIRI_URL
+from transidate.constants import (
+    NETEX110_URL,
+    NETEX_ROOT,
+    SIRI10_URL,
+    SIRI13_URL,
+    SIRI14_URL,
+    SIRI20_URL,
+    SIRI_ROOT,
+    TXC21_URL,
+    TXC24_URL,
+    TXC_ROOT,
+)
 from transidate.datasets import DataSet
 from transidate.exceptions import NotSupported
 from transidate.violations import Violation
@@ -63,9 +74,8 @@ class Validator:
                 self.schema.assertValid(d.tree)
             except etree.DocumentInvalid:
                 status = ValidationResult.ERROR
-                violations += [
-                    Violation.from_log_entry(e) for e in self.schema.error_log  # type: ignore
-                ]
+                errors = self.schema.error_log  # type: ignore
+                violations += [Violation.from_log_entry(e) for e in errors]
             except etree.XMLSyntaxError as exc:
                 status = ValidationResult.ERROR
                 violations.append(Violation.from_syntax_error(exc))
@@ -95,35 +105,11 @@ class ValidatorFactory:
 
 
 Validators = ValidatorFactory()  # type: ignore
-Validators.register_schema(
-    "TXC2.1",
-    url=NAPTAN_URL + "2.1/TransXChange_schema_2.1.zip",
-    root_path="TransXChange_general.xsd",
-)
-Validators.register_schema(
-    "TXC2.4",
-    url=NAPTAN_URL + "2.4/TransXChange_schema_2.4.zip",
-    root_path="TransXChange_general.xsd",
-)
-Validators.register_schema(
-    "SIRI1.1", url=SIRI_URL + "1.0/siri-1.0.zip", root_path="siri.xsd"
-)
-Validators.register_schema(
-    "SIRI1.3", url=SIRI_URL + "1.3/siri-1.3.zip", root_path="siri.xsd"
-)
-Validators.register_schema(
-    "SIRI1.4", url=SIRI_URL + "1.4/siri-1.4.zip", root_path="siri.xsd"
-)
-Validators.register_schema(
-    "SIRI2.0", url=SIRI_URL + "2.0/Siri_XML-v2.0.zip", root_path="xsd/siri.xsd"
-)
-Validators.register_schema(
-    "NETEX1.0",
-    url=NETEX_URL + "1.10/NeTExXmlSchemaOnly-v1.10_2020.07.29.zip",
-    root_path="xsd/NeTEx_siri.xsd",
-)
-Validators.register_schema(
-    "NETEX1.10",
-    url=NETEX_URL + "1.10/NeTExXmlSchemaOnly-v1.10_2020.07.29.zip",
-    root_path="xsd/NeTEx_siri.xsd",
-)
+Validators.register_schema("TXC2.1", url=TXC21_URL, root_path=TXC_ROOT)
+Validators.register_schema("TXC2.4", url=TXC24_URL, root_path=TXC_ROOT)
+Validators.register_schema("SIRI1.1", url=SIRI10_URL, root_path=SIRI_ROOT)
+Validators.register_schema("SIRI1.3", url=SIRI13_URL, root_path=SIRI_ROOT)
+Validators.register_schema("SIRI1.4", url=SIRI14_URL, root_path=SIRI_ROOT)
+Validators.register_schema("SIRI2.0", url=SIRI20_URL, root_path="xsd/" + SIRI_ROOT)
+Validators.register_schema("NETEX1.0", url=NETEX110_URL, root_path=NETEX_ROOT)
+Validators.register_schema("NETEX1.10", url=NETEX110_URL, root_path=NETEX_ROOT)
