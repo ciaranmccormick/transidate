@@ -1,9 +1,11 @@
 from pathlib import Path
 from typing import Optional
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 import pytest
+from lxml import etree
 
+from transidate.datasets import DataSet, Document
 from transidate.exceptions import NotSupported
 from transidate.validators import (
     ValidationResult,
@@ -91,8 +93,24 @@ def test_get_xsd(mparse):
     validator = Validator(url="https://afakeurl.url", root_path="root.xsd")
     path = Path(__file__)
     with pytest.raises(NotSupported) as exc:
-        validator.get_xsd(path)
+        validator._get_document(path)
 
     expected_path = path / validator.root_path
     assert str(exc.value) == "Source 'root.xsd' cannot be parsed."
     mparse.assert_called_once_with(expected_path.as_posix())
+
+
+def test_xml_syntax_error():
+    validator = Validator(url="https://afakeurl.url", root_path="root.xsd")
+    schema = Mock(spec=etree.XMLSchema)
+    # msg, code, lineno, position, filename
+    error = etree.XMLSyntaxError("Error", "Code", 10, 1, "document.xml")  # type: ignore
+    schema.validate.side_effect = error
+    validator._schema = schema
+    document = Mock(spec=Document, name="document.xml")
+    dataset = Mock(spec=DataSet, documents=lambda: [document])
+
+    actual = validator.validate(dataset)
+
+    assert len(actual.violations) == 1
+    assert actual.status == ValidationResult.ERROR
