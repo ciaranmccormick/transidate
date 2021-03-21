@@ -3,10 +3,8 @@ from typing import Optional
 from unittest.mock import Mock, patch
 
 import pytest
-from lxml import etree
 
-from transidate.datasets import DataSet, Document
-from transidate.exceptions import NotSupported
+from transidate.exceptions import NotRegistered, NotSupported
 from transidate.validators import (
     ValidationResult,
     Validator,
@@ -57,10 +55,9 @@ class TestTransXChange24Document(ValidatorTest):
         assert len(result.violations) == 2
 
 
-@pytest.mark.skip
 class TestNeTExValidator:
     def test_validate(self, netex):
-        validator = Validators.get_validator("NETEX1.10")
+        validator = Validators.get_validator("NTXPUB1.10")
         result = validator.validate(netex)
         assert result.OK == result.status
         assert len(result.violations) == 0
@@ -83,7 +80,7 @@ def test_validator_factory_registered_schemas():
 def test_unregistered_validator():
     factory = ValidatorFactory()  # type: ignore
     factory.register_schema("KEY1", url="https://afakeurl.url", root_path="root.xsd")
-    with pytest.raises(ValueError) as exc:
+    with pytest.raises(NotRegistered) as exc:
         factory.get_validator("KEY2")
     assert str(exc.value) == "Schema 'KEY2' was not registered."
 
@@ -91,26 +88,9 @@ def test_unregistered_validator():
 @patch("transidate.validators.etree.parse", side_effect=OSError)
 def test_get_xsd(mparse):
     validator = Validator(url="https://afakeurl.url", root_path="root.xsd")
-    path = Path(__file__)
+    path = Mock(spec=Path)
+    path.glob.return_value = [Mock(), Mock()]
     with pytest.raises(NotSupported) as exc:
-        validator._get_document(path)
+        validator.get_xsd(path)
 
-    expected_path = path / validator.root_path
     assert str(exc.value) == "Source 'root.xsd' cannot be parsed."
-    mparse.assert_called_once_with(expected_path.as_posix())
-
-
-def test_xml_syntax_error():
-    validator = Validator(url="https://afakeurl.url", root_path="root.xsd")
-    schema = Mock(spec=etree.XMLSchema)
-    # msg, code, lineno, position, filename
-    error = etree.XMLSyntaxError("Error", "Code", 10, 1, "document.xml")  # type: ignore
-    schema.validate.side_effect = error
-    validator._schema = schema
-    document = Mock(spec=Document, name="document.xml")
-    dataset = Mock(spec=DataSet, documents=lambda: [document])
-
-    actual = validator.validate(dataset)
-
-    assert len(actual.violations) == 1
-    assert actual.status == ValidationResult.ERROR
