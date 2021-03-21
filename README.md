@@ -38,7 +38,7 @@ the data against. If the `--version` is not specified the data is automatically
 validated again TransXChange v2.4.
 
 ```sh
-transidate --version TXC2.4 linear.xml
+transidate validate --version TXC2.4 linear.xml
 ```
 
 ![XML with no violations](https://raw.githubusercontent.com/ciaranmccormick/transidate/main/imgs/transidategoodfile.gif)
@@ -51,7 +51,7 @@ such as the file it occurred in, the line number of the violation and details.
 You can also use transidate to validate a archived collection of files.
 
 ```sh
-transidate --version TXC2.4 routes.zip
+transidate validate --version TXC2.4 routes.zip
 ```
 
 ![Zip with no violations](https://raw.githubusercontent.com/ciaranmccormick/transidate/main/imgs/transidategoodzip.gif)
@@ -64,5 +64,32 @@ violations.
 Schema violations can be saved to a CSV file using the `--csv` flag.
 
 ```sh
-transidate --version TXC2.4 --csv routes.zip
+transidate validate --version TXC2.4 --csv routes.zip
+```
+
+## Configuration
+
+Transidate comes configured with several schemas out of the box. It is really
+easy to add your own schema validators to `transidate`. The first step is to
+create a configuration file e.g. `touch transidate.cfg`.
+
+Transidate fetches schemas from web in a zip format, to add a schema you
+just need to define the name, url and root.
+
+```ini
+[MYSCHEMA] # The 'version'
+url=http://linktoschema.url/schema.zip # where transidate can get the schema
+root=schema_root_file.xml # the root of the schema
+```
+
+Then you can just pass the schema configuration using `--schemas`.
+
+```sh
+transidate validate --version MYSCHEMA --schemas transidate.cfg linear.xml
+```
+
+You can list all the avialble schemas list th `list` command.
+
+```sh
+transidate list
 ```
