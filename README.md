@@ -93,3 +93,5 @@ You can list all the avialble schemas list th `list` command.
 ```sh
 transidate list
 ```
+
+![List schemas](https://raw.githubusercontent.com/ciaranmccormick/transidate/main/imgs/transidatelist.gif)
