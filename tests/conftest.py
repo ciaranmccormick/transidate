@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import pytest
+
 from transidate.datasets import DataSet
 
 DATA_DIR = Path(__file__).parent.joinpath("data")
@@ -38,7 +39,7 @@ def txc21_archive():
 
 @pytest.fixture
 def netex():
-    filepath = DATA_DIR / "netex110.xml"
+    filepath = DATA_DIR / "netex1good.xml"
     return DataSet(filepath)
 
 

@@ -1,3 +1,4 @@
+import configparser
 import io
 import tempfile
 import zipfile
@@ -9,20 +10,8 @@ import requests
 from lxml import etree
 
 from transidate.console import console
-from transidate.constants import (
-    NETEX110_URL,
-    NETEX_ROOT,
-    SIRI10_URL,
-    SIRI13_URL,
-    SIRI14_URL,
-    SIRI20_URL,
-    SIRI_ROOT,
-    TXC21_URL,
-    TXC24_URL,
-    TXC_ROOT,
-)
 from transidate.datasets import DataSet
-from transidate.exceptions import NotSupported
+from transidate.exceptions import NotRegistered, NotSupported
 from transidate.violations import Violation
 
 
@@ -42,13 +31,18 @@ class Validator:
         self._schema: Optional[etree.XMLSchema] = None
 
     def get_xsd(self, schema_path: Path) -> etree.XMLSchema:
-        fullpath = schema_path / self.root_path
+        paths = [p for p in schema_path.glob("**/" + self.root_path)]
         try:
+            fullpath = paths[0]
             console.print(f"Parsing schema file {self.root_path}.")
             doc = etree.parse(fullpath.as_posix())
+            schema = etree.XMLSchema(doc)
         except OSError:
             raise NotSupported(f"Source {self.root_path!r} cannot be parsed.")
-        schema = etree.XMLSchema(doc)
+        except IndexError:
+            raise NotSupported(f"Could not find {self.root_path!r} in schema directory")
+        except etree.XMLSchemaParseError as exc:
+            raise NotSupported(str(exc))
         return schema
 
     @property
@@ -93,23 +87,32 @@ class ValidatorFactory:
     def get_validator(self, key: str) -> Validator:
         validator = self._validators.get(key, None)
         if validator is None:
-            raise ValueError(f"Schema {key!r} was not registered.")
+            raise NotRegistered(f"Schema {key!r} was not registered.")
 
         # Download the schema immediately
-        validator.schema
+        # validator.schema
         return validator
 
     @property
     def registered_schemas(self) -> KeysView[str]:
         return self._validators.keys()
 
+    def _add_from_config(self, config: configparser.ConfigParser) -> None:
+        for key in config.sections():
+            section = config[key]
+            url = section.get("url")
+            root = section.get("root")
+            self.register_schema(key=key, url=url, root_path=root)
 
-Validators = ValidatorFactory()  # type: ignore
-Validators.register_schema("TXC2.1", url=TXC21_URL, root_path=TXC_ROOT)
-Validators.register_schema("TXC2.4", url=TXC24_URL, root_path=TXC_ROOT)
-Validators.register_schema("SIRI1.1", url=SIRI10_URL, root_path=SIRI_ROOT)
-Validators.register_schema("SIRI1.3", url=SIRI13_URL, root_path=SIRI_ROOT)
-Validators.register_schema("SIRI1.4", url=SIRI14_URL, root_path=SIRI_ROOT)
-Validators.register_schema("SIRI2.0", url=SIRI20_URL, root_path="xsd/" + SIRI_ROOT)
-Validators.register_schema("NETEX1.0", url=NETEX110_URL, root_path=NETEX_ROOT)
-Validators.register_schema("NETEX1.10", url=NETEX110_URL, root_path=NETEX_ROOT)
+    @classmethod
+    def from_config(cls, path: Path):
+        factory = cls()
+        with path.open("r") as f:
+            config = configparser.ConfigParser()
+            config.read_file(f)
+        factory._add_from_config(config)
+        return factory
+
+
+default_config = Path(__file__).parent / "default.ini"
+Validators = ValidatorFactory.from_config(default_config)
