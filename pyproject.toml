@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "transidate"
-version = "0.3.1"
+version = "0.3.2"
 description = "Commandline tool for XML transit data validation."
 authors = ["Ciaran McCormick <ciaran@ciaranmccormick.com>"]
 readme = "README.md"
