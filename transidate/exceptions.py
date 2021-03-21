@@ -4,3 +4,7 @@ class TransidateException(Exception):
 
 class NotSupported(TransidateException):
     pass
+
+
+class NotRegistered(TransidateException):
+    pass

@@ -1,10 +1,10 @@
 from pathlib import Path
 from typing import Optional
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 import pytest
 
-from transidate.exceptions import NotSupported
+from transidate.exceptions import NotRegistered, NotSupported
 from transidate.results import Status, ValidationResult
 from transidate.validators import Validator, ValidatorFactory, Validators
 
@@ -51,10 +51,9 @@ class TestTransXChange24Document(ValidatorTest):
         assert len(result.items) == 2
 
 
-@pytest.mark.skip
 class TestNeTExValidator:
     def test_validate(self, netex):
-        validator = Validators.get_validator("NETEX1.10")
+        validator = Validators.get_validator("NTXPUB1.10")
         result = validator.validate(netex)
         assert Status.ok == result.status
         assert len(result.items) == 0
@@ -77,7 +76,7 @@ def test_validator_factory_registered_schemas():
 def test_unregistered_validator():
     factory = ValidatorFactory()  # type: ignore
     factory.register_schema("KEY1", url="https://afakeurl.url", root_path="root.xsd")
-    with pytest.raises(ValueError) as exc:
+    with pytest.raises(NotRegistered) as exc:
         factory.get_validator("KEY2")
     assert str(exc.value) == "Schema 'KEY2' was not registered."
 
@@ -85,10 +84,9 @@ def test_unregistered_validator():
 @patch("transidate.validators.etree.parse", side_effect=OSError)
 def test_get_xsd(mparse):
     validator = Validator(url="https://afakeurl.url", root_path="root.xsd")
-    path = Path(__file__)
+    path = Mock(spec=Path)
+    path.glob.return_value = [Mock(), Mock()]
     with pytest.raises(NotSupported) as exc:
         validator.get_xsd(path)
 
-    expected_path = path / validator.root_path
     assert str(exc.value) == "Source 'root.xsd' cannot be parsed."
-    mparse.assert_called_once_with(expected_path.as_posix())
