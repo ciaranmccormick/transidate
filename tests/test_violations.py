@@ -3,7 +3,7 @@ from unittest.mock import Mock
 import pytest
 from lxml.etree import XMLSyntaxError, _LogEntry
 
-from transidate.violations import Violation
+from transidate.results import Violation
 
 
 @pytest.mark.parametrize(

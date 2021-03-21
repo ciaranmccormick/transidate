@@ -3,6 +3,7 @@ from pathlib import Path
 from typing import Iterator
 
 from lxml import etree
+
 from transidate.typing import XMLFile
 
 
@@ -33,12 +34,12 @@ class DataSet:
         return self.path.suffix == ".zip"
 
     def documents(self) -> Iterator[Document]:
-        if self.is_zip:
-            with zipfile.ZipFile(self.path.as_posix()) as zf:
-                xml_files = [n for n in zf.namelist() if n.endswith(".xml")]
-                for name in xml_files:
-                    with zf.open(name, "r") as f:
-                        yield Document(f)
-        else:
-            with self.path.open("r") as xmlfile:
-                yield Document(xmlfile)
+        with self.path.open("rb") as f:
+            if self.is_zip:
+                with zipfile.ZipFile(f) as zf:
+                    xml_files = [n for n in zf.namelist() if n.endswith(".xml")]
+                    for name in xml_files:
+                        with zf.open(name, "r") as xml:
+                            yield Document(xml)
+            else:
+                yield Document(f)

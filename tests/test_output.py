@@ -5,13 +5,12 @@ from unittest.mock import Mock, patch
 from freezegun import freeze_time
 
 from transidate.outputs import ConsoleOutput, CSVOutput, Output
-from transidate.validators import ValidationResult
-from transidate.violations import Violation
+from transidate.results import Status, ValidationResult, Violation
 
 
 @freeze_time("2020-01-14 12:12:12")
 def test_output_class(txc24):
-    result = ValidationResult(status=ValidationResult.ERROR, violations=[])
+    result = ValidationResult(status=Status.ok, items=[])
     o = Output(dataset=txc24, result=result)
 
     exp_extension = ".txt"
@@ -26,7 +25,7 @@ def test_output_class(txc24):
 
 
 def test_csv_get_extension(txc24):
-    result = ValidationResult(status=ValidationResult.ERROR, violations=[])
+    result = ValidationResult(status=Status.error, items=[])
     o = CSVOutput(dataset=txc24, result=result)
     assert o.get_extension() == ".csv"
 
@@ -35,7 +34,7 @@ def test_write_csv(txc24):
     violations = [
         Violation(filename=txc24.path.name, line=24, message="Violation occurred")
     ]
-    result = ValidationResult(status=ValidationResult.ERROR, violations=violations)
+    result = ValidationResult(status=Status.error, items=violations)
     o = CSVOutput(dataset=txc24, result=result)
     mwriter = Mock(spec=csv.DictWriter, fieldnames=["filename", "line", "message"])
     expected_called = [v.dict() for v in violations]
@@ -49,7 +48,7 @@ def test_console_output(mconsole, txc21):
     violation = Violation(
         filename=txc21.path.name, line=24, message="Violation occurred"
     )
-    result = ValidationResult(status=ValidationResult.ERROR, violations=[violation])
+    result = ValidationResult(status=Status.error, items=[violation])
     o = ConsoleOutput(dataset=txc21, result=result)
     o.output()
     expected_output = f"{violation.filename}:{violation.line}: {violation.message}"

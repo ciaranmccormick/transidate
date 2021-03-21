@@ -4,11 +4,11 @@ from pathlib import Path
 
 from transidate.console import console
 from transidate.datasets import DataSet
-from transidate.validators import ValidationResult
+from transidate.results import BaseResult
 
 
 class Output:
-    def __init__(self, dataset: DataSet, result: ValidationResult):
+    def __init__(self, dataset: DataSet, result: BaseResult):
         self.dataset = dataset
         self.result = result
 
@@ -34,8 +34,8 @@ class Output:
 
 class ConsoleOutput(Output):
     def output(self) -> None:
-        for violation in self.result.violations:
-            console.print(f"{violation.filename}:{violation.line}: {violation.message}")
+        for item in self.result.items:
+            console.print(f"{item.filename}:{item.line}: {item.message}")
 
 
 class CSVOutput(Output):
@@ -43,9 +43,9 @@ class CSVOutput(Output):
         return ".csv"
 
     def _write_csv(self, writer: csv.DictWriter) -> None:
-        violations = [v.dict() for v in self.result.violations]
+        items = [v.dict() for v in self.result.items]
         writer.writeheader()
-        writer.writerows(violations)
+        writer.writerows(items)
 
     def output(self) -> None:
         output_path = self.get_output_path()

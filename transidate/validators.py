@@ -1,9 +1,8 @@
 import io
 import tempfile
 import zipfile
-from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, KeysView, List, Optional
+from typing import Dict, KeysView, Optional
 
 import requests
 from lxml import etree
@@ -23,16 +22,7 @@ from transidate.constants import (
 )
 from transidate.datasets import DataSet
 from transidate.exceptions import NotSupported
-from transidate.violations import Violation
-
-
-@dataclass
-class ValidationResult:
-    OK = 0
-    ERROR = -1
-
-    status: int
-    violations: List[Violation]
+from transidate.results import Status, ValidationResult, Violation
 
 
 class Validator:
@@ -67,20 +57,20 @@ class Validator:
 
     def validate(self, dataset: DataSet) -> ValidationResult:
         violations = []
-        status = ValidationResult.OK
+        status = Status.ok
         for d in dataset.documents():
             console.print(f"Validating {d.name}.")
             try:
                 self.schema.assertValid(d.tree)
             except etree.DocumentInvalid:
-                status = ValidationResult.ERROR
+                status = Status.error
                 errors = self.schema.error_log  # type: ignore
                 violations += [Violation.from_log_entry(e) for e in errors]
             except etree.XMLSyntaxError as exc:
-                status = ValidationResult.ERROR
+                status = Status.error
                 violations.append(Violation.from_syntax_error(exc))
 
-        return ValidationResult(status=status, violations=violations)
+        return ValidationResult(status=status, items=violations)
 
 
 class ValidatorFactory:

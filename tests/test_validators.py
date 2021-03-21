@@ -5,12 +5,8 @@ from unittest.mock import patch
 import pytest
 
 from transidate.exceptions import NotSupported
-from transidate.validators import (
-    ValidationResult,
-    Validator,
-    ValidatorFactory,
-    Validators,
-)
+from transidate.results import Status, ValidationResult
+from transidate.validators import Validator, ValidatorFactory, Validators
 
 
 class ValidatorTest:
@@ -32,8 +28,8 @@ class TestTransXChange21Document(ValidatorTest):
     def test_validate(self, txc21):
         result = self.validator.validate(txc21)
         expected = ValidationResult(
-            status=ValidationResult.OK,
-            violations=[],
+            status=Status.ok,
+            items=[],
         )
         assert expected == result
 
@@ -44,15 +40,15 @@ class TestTransXChange24Document(ValidatorTest):
     def test_validate(self, txc24):
         result = self.validator.validate(txc24)
         expected = ValidationResult(
-            status=ValidationResult.OK,
-            violations=[],
+            status=Status.ok,
+            items=[],
         )
         assert expected == result
 
     def test_validate_malformed_file(self, txc24invalid):
         result = self.validator.validate(txc24invalid)
-        assert result.ERROR == result.status
-        assert len(result.violations) == 2
+        assert Status.error == result.status
+        assert len(result.items) == 2
 
 
 @pytest.mark.skip
@@ -60,16 +56,16 @@ class TestNeTExValidator:
     def test_validate(self, netex):
         validator = Validators.get_validator("NETEX1.10")
         result = validator.validate(netex)
-        assert result.OK == result.status
-        assert len(result.violations) == 0
+        assert Status.ok == result.status
+        assert len(result.items) == 0
 
 
 class TestSiriValidator:
     def test_validate(self, siri2):
         validator = Validators.get_validator("SIRI2.0")
         result = validator.validate(siri2)
-        assert result.OK == result.status
-        assert len(result.violations) == 0
+        assert Status.ok == result.status
+        assert len(result.items) == 0
 
 
 def test_validator_factory_registered_schemas():
