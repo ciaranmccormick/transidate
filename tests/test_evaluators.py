@@ -83,10 +83,9 @@ def test_element_expression_evaluation():
     path.open.return_value = xml_file
     dataset = DataSet(path)
     expression = "//x:LocalityName"
-    ns = "http://www.transxchange.org.uk/"
     namespace = "x"
     evaluator = XPathEvaluator(expression, namespace)
     result = evaluator.evaluate(dataset)
     assert result.status == Status.ok
     assert result.item_count == 2
-    assert result.items[0].message == f"{{{ns}}}LocalityName"
+    assert result.items[0].message == "Hinckley"

@@ -12,26 +12,45 @@ class XPathEvaluator:
         self.expression = expression
         self.namespace: str = namespace
 
+    def wants_text(self):
+        return self.expression.endswith("/text()")
+
+    def get_context(self):
+        if self.wants_text():
+            *rest, last = self.expression.split("/")
+            return "/".join(rest)
+        return self.expression
+
     def evaluate(self, dataset: DataSet):
         evaluations = []
+
         for doc in dataset.documents():
             console.print(f"Evaluating {doc.name}.")
             root = doc.tree.getroot()
             ns = str(root.nsmap.get(None))
             namespaces = {self.namespace: ns}
+            context = self.get_context()
+
             try:
-                results = root.xpath(self.expression, namespaces=namespaces)
+                elements = root.xpath(context, namespaces=namespaces)
             except etree.XPathEvalError:
                 return EvaluationResult(status=Status.error, items=[])
 
-            if not isinstance(results, Iterable):
-                results = [str(results)]
+            breakpoint()
 
-            for item in results:
-                if isinstance(item, etree._Element):
-                    evaluation = Evaluation.from_element(item)
-                else:
-                    evaluation = Evaluation(filename=doc.name, line=0, message=item)
-                evaluations.append(evaluation)
+            evaluations = []
+            if isinstance(elements, (float, bool, str, int)):
+                message = f"{context} = {elements}"
+                evaluations.append(
+                    Evaluation(filename=doc.name, line=0, message=message)
+                )
+            elif not isinstance(elements, Iterable):
+                evaluations.append(
+                    Evaluation(filename=doc.name, line=0, message=elements)
+                )
+            else:
+                for element in elements:
+                    evaluation = Evaluation.from_element(element)
+                    evaluations.append(evaluation)
 
         return EvaluationResult(status=Status.ok, items=evaluations)

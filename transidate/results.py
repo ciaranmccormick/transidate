@@ -33,7 +33,8 @@ class Evaluation(BaseItem):
     def from_element(cls, element: etree._Element):
         filename = Path(element.base).name  # type: ignore
         line = element.sourceline  # type: ignore
-        return cls(line=line, filename=filename, message=element.tag)
+        text = element.text if not None else element.tag
+        return cls(line=line, filename=filename, message=text)
 
 
 class EvaluationResult(BaseResult):

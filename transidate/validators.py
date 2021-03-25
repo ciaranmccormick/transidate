@@ -33,6 +33,7 @@ class Validator:
             raise NotSupported(f"Could not find {self.root_path!r} in schema directory")
         except etree.XMLSchemaParseError as exc:
             raise NotSupported(str(exc))
+        console.print("Schema successfully loaded.")
         return schema
 
     @property

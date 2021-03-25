@@ -10,8 +10,8 @@ from transidate.datasets import DataSet
 from transidate.evaluators import XPathEvaluator
 from transidate.exceptions import TransidateException
 from transidate.outputs import ConsoleOutput, CSVOutput
-from transidate.results import Status
-from transidate.validators import ValidationResult, Validator, Validators
+from transidate.results import Status, ValidationResult
+from transidate.validators import Validator, Validators
 
 _SCHEMA_TYPES = Validators.registered_schemas
 HEADER = "[bold red]"
