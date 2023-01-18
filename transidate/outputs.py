@@ -42,7 +42,7 @@ class CSVOutput(Output):
     def get_extension(self) -> str:
         return ".csv"
 
-    def _write_csv(self, writer: csv.DictWriter) -> None:
+    def _write_csv(self, writer: "csv.DictWriter[str]") -> None:
         violations = [v.dict() for v in self.result.violations]
         writer.writeheader()
         writer.writerows(violations)
