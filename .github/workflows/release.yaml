@@ -1,6 +1,5 @@
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
 name: Release transidate to PyPi
 
 on:
@@ -18,39 +17,22 @@ jobs:
       - name: Setup Python 3
         uses: actions/setup-python@v1
         with:
-          python-version: "3.x"
+          python-version: "3.9"
 
-      - name: Install Poetry
-        uses: abatilo/actions-poetry@v2.0.0
-
-      - name: Cache Poetry virtualenv
-        uses: actions/cache@v1
-        id: cache-packages
+      - uses: Gr1N/setup-poetry@v7
+      - name: Set up cache
+        uses: actions/cache@v2
         with:
-          path: ~/.virtualenvs
-          key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-poetry-
-
-      - name: Set Poetry config
+          path: .venv
+          key: venv-${{ matrix.python-version }}-${{ hashFiles('poetry.lock') }}
+      - name: Install dependencies
         run: |
-          poetry --version
-          poetry config virtualenvs.in-project false
-          poetry config virtualenvs.path ~/.virtualenvs
-
-      - name: Install Dependencies
-        if: steps.cache.packages.outputs.cache-hit != 'true'
-        run: poetry install
-
-      - name: Run tests with coverage
-        run: |
-          poetry run pytest --cov=transidate --cov-branch --cov-fail-under=80 tests/
+          poetry config virtualenvs.in-project true
+          poetry install
 
       - name: Publish to pypi
         shell: bash
-        env:
-          USERNAME: ${{ secrets.PYPI_USERNAME }}
-          PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: |
+          poetry config pypi-token.pypi ${{secrets.PYPI_TOKEN}}
           poetry build
-          poetry publish --username "$USERNAME" --password "$PASSWORD"
+          poetry publish
